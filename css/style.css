@@ -151,6 +151,45 @@ h2, h3, h4 {
   transform: translateY(-2px);
 }
 
+/* Course cards: image left, content right */
+.course {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+/* Thumbnail sizing & left margin */
+.course-thumb {
+  width: clamp(80px, 20vw, 120px);
+  height: auto;
+  margin: 0  var(--spacing-md) 0 0; /* right‐side gap only */
+  flex-shrink: 0;                    /* don’t let it shrink */
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+/* Course info takes the rest of the space */
+.course-info {
+  flex: 1;
+}
+
+/* Mobile: stack again on narrow screens */
+@media (max-width: 600px) {
+  .course-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .course-thumb {
+    margin: 0 auto var(--spacing-sm);
+  }
+  .course-info {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
 .news-item .date,
 .publication-summary .date,
 .publication-item .date {
@@ -382,6 +421,83 @@ a:hover {
   .alumni-section .lab-members li {
     flex: 1 1 100%;
     max-width: 100%;
+  }
+}
+
+/* style for the news page */
+/* News timeline */
+.news-list {
+  position: relative;
+  list-style: none;
+  margin: var(--spacing-lg) 0;
+  padding: 0;
+}
+
+/* Vertical line */
+.news-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2.5rem;
+  width: 2px;
+  background: var(--color-muted-text);
+}
+
+/* Each item */
+.news-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  padding: var(--spacing-sm) 0;
+}
+
+/* Dot marker */
+.news-item::before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+/* Date column */
+.news-item time {
+  flex: 0 0 5rem;
+  font-size: 0.875rem;
+  color: var(--color-muted-text);
+  text-align: right;
+  margin-right: var(--spacing-md);
+}
+
+/* Text column */
+.news-text {
+  flex: 1;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Tighten up the last item */
+.news-list .news-item:last-child {
+  padding-bottom: 0;
+}
+
+/* Mobile fallback: simple list */
+@media (max-width: 600px) {
+  .news-list::before { display: none; }
+  .news-item {
+    display: block;
+    padding: var(--spacing-sm) 0;
+  }
+  .news-item::before { display: none; }
+  .news-item time {
+    display: block;
+    text-align: left;
+    margin-bottom: var(--spacing-xs);
   }
 }
 

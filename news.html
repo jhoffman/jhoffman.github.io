@@ -3,6 +3,7 @@ layout: default
 title: News
 ---
 
+<!--
 <section id="news">
   <h2>Recent News</h2>
   {% for item in site.data.news %}
@@ -12,4 +13,16 @@ title: News
     <p>{{ item.description }}</p>
   </article>
   {% endfor %}
+</section>
+-->
+<section id="news">
+  <h2>Recent News</h2>
+  <ul class="news-list">
+    {% for item in site.data.news %}
+    <li class="news-item">
+      <time datetime="{{ item.date }}">{{ item.date | date: "%b %Y" }}</time>
+      <p class="news-text">{{ item.news }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
