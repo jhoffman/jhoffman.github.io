@@ -16,6 +16,9 @@
   /* Accent */
   --color-accent:     #4a90e2;  /* soft yet vibrant blue – links/buttons */
   --color-accent-light: #d0e6fc;/* gentle blue hover/background */
+  
+  /* New complementary accent */
+  --color-accent-alt: #2ecc71;  /* emerald green */
 
   /* Muted */
   --color-muted-text: #6c757d;  /* medium gray – for dates/metadata */
@@ -70,8 +73,12 @@ header h1 {
   font-size: 2rem;
   font-weight: 700;
   /* bump contrast: ensure white text on dark background */
-  color: var(--color-primary-text);
+  color: var(--color-bg);
   margin-bottom: var(--spacing-sm);
+}
+
+header h1 a {
+	color: var(--color-accent);
 }
 
 nav {
@@ -92,7 +99,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: var(--color-bg);
   text-decoration: none;
   font-weight: 600;
   padding: var(--spacing-sm) var(--spacing-md);

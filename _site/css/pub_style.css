@@ -13,7 +13,8 @@
 /* Publication card: grid layout with thumbnail left, content right */
 .publication-summary {
   display: grid;
-  grid-template-columns: clamp(200px, 30%, 400px) minmax(0, 1fr);
+  /*grid-template-columns: clamp(200px, 30%, 400px) minmax(0, 1fr);*/
+  grid-template-columns: 30% 70%;
   grid-template-rows: auto;
   grid-template-areas: "thumb content";
   gap: var(--spacing-md);
@@ -23,13 +24,6 @@
   padding-bottom: var(--spacing-sm);
 }
 
-/* Thumbnail styling */
-.pub-thumb {
-  grid-area: thumb;
-  width: 100%;
-  border-radius: var(--radius);
-  object-fit: cover;
-}
 
 /* Content wrapper styling */
 .pub-content {
@@ -40,6 +34,27 @@
   max-width: 600px;    /* cap text width for readability */
 }
 
+/* Ensure the card is a positioning context */
+.publication-summary {
+  position: relative;
+}
+
+/* Style for the “New” badge */
+.badge.new {
+  position: absolute;
+  top: var(--spacing-sm);
+  right: var(--spacing-sm);
+  background-color: var(--color-accent-alt);
+  color: var(--color-surface);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  z-index: 10;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
 /* Title and metadata */
 .publication-summary h4 {
   margin: 0 0 0.125rem; /* tighten space under title */
@@ -48,11 +63,6 @@
 .publication-summary .meta {
   margin: 0 0 0.25rem;  /* small gap under meta */
   font-size: 0.875rem;
-}
-
-/* Abstract styling */
-.publication-summary .abstract {
-  margin: 0 0 0.25rem;
 }
 
 /* Link badges */
@@ -85,7 +95,7 @@
 }
 
 .pub-content .press a {
-  color: var(--color-text);
+  color: var(--color-muted-text);
   margin-right: var(--spacing-sm);
 }
 
@@ -102,6 +112,7 @@
   font-style: italic;
   font-size: 0.95rem;
   line-height: 1.4;
+  color: var(--color-accent);
 }
 
 /* Responsive: stack on narrow screens */
@@ -120,3 +131,36 @@
     max-width: none;
   }
 }
+
+
+
+/* Publication images */
+.publication-item img,
+.publication-summary img {
+  float: left;
+  margin-right: 1rem;
+}
+
+/* Ensure images in publications are responsive */
+.publication-item img,
+.publication-summary img {
+  float: none;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+/* Thumbnail styling */
+.publication-summary .pub-thumb {
+  grid-area: thumb;
+  grid-column: 1 / 2;
+  width: 100%;        /* fill entire first column */
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--radius);
+  justify-self: stretch;/* ensure it won’t shrink */
+  display: block;       /* remove any inline spacing */
+  padding: 0;
+  margin: 0;
+}
+
+
