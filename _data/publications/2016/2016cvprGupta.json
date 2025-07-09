@@ -1,0 +1,16 @@
+{
+    "id": "2016cvprGupta",
+    "authors": "Saurabh Gupta, Judy Hoffman,  Jitendra Malik",
+    "title": "Cross Modal Distillation for Supervision Transfer",
+    "venue": "cvpr",
+    "year": "2016",
+    "pdf": "https://arxiv.org/abs/1507.00448",
+    "slides": "",
+    "code": "https://github.com/s-gupta/fast-rcnn/tree/distillation",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2016cvprGupta.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": "In this work we propose a technique that transfers supervision between images from different modalities. We use learned representations from a large labeled modality as a supervisory signal for training representations for a new unlabeled paired modality. Our method enables learning of rich representations for unlabeled modalities and can be used as a pre-training procedure for new modalities with limited labeled data. We show experimental results where we transfer supervision from labeled RGB images to unlabeled depth and optical flow images and demonstrate large improvements for both these cross modal supervision transfers."
+}

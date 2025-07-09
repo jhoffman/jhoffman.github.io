@@ -1,0 +1,16 @@
+{
+    "id": "2023iccv_PASTA",
+    "authors": "Prithvijit Chattopadhyay*, Kartik Sarangmath*, Vivek Vijaykumar, Judy Hoffman",
+    "title": "PASTA: Proportional Amplitude Spectrum Training Augmentation for Syn-to-Real Domain Generalization",
+    "venue": "iccv",
+    "year": "2023",
+    "pdf": "https://arxiv.org/abs/2212.00979",
+    "slides": "",
+    "code": "https://github.com/prithv1/PASTA",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023_PASTA.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

@@ -1,0 +1,18 @@
+{
+    "id": "2012eccvHoffman",
+    "authors": "Judy Hoffman,  Brian Kulis, Trevor Darrell, Kate Saenko",
+    "title": "Discovering Latent Domains For Multisource Domain Adaptation",
+    "venue": "eccv",
+    "year": "2012",
+    "pdf": "pdfs/Hoffman_ECCV2012.pdf",
+    "slides": "talks/Hoffman_WIML2012.pdf",
+	"poster": "posters/2012eccvHoffman.pdf",
+    "code": "code/hoffman_latent_domains_release_v2.zip",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2012eccvHoffman.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+	"video": "videos/2012eccvHoffman.png",
+    "abstract": ""
+}

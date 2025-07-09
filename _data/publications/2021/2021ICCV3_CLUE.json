@@ -1,0 +1,17 @@
+{
+    "id": "2021CLUE",
+    "authors": "Viraj Prabhu, Arjun Chandrasekaran, Kate Saenko, Judy Hoffman",
+    "title": "Active Domain Adaptation via Clustering Uncertainty-weighted Embeddings",
+    "venue": "iccv",
+    "year": "2021",
+    "pdf": "https://arxiv.org/abs/2010.08666",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2021arXivCLUE.png",
+    "project": "https://virajprabhu.github.io/adaclue-web/",
+	"video": "https://virajprabhu.github.io/adaclue-web/index.html#video",
+    "is_new": false,
+	"special": "",
+    "abstract": "Generalizing deep neural networks to new target domains is critical to their real-world utility. In practice, it may be feasible to get some target data labeled, but to be cost-effective it is desirable to select a maximally-informative subset via active learning (AL). We study the problem of AL under a domain shift, called Active Domain Adaptation (Active DA). We empirically demonstrate how existing AL approaches based solely on model uncertainty or diversity sampling are suboptimal for Active DA. Our algorithm, Active Domain Adaptation via Clustering Uncertainty-weighted Embeddings (ADA-CLUE), i) identifies target instances for labeling that are both uncertain under the model and diverse in feature space, and ii) leverages the available source and target data for adaptation by optimizing a semi-supervised adversarial entropy loss that is complementary to our active sampling objective. On standard image classification-based domain adaptation benchmarks, ADA-CLUE consistently outperforms competing active adaptation, active learning, and domain adaptation methods across domain shifts of varying severity."
+}

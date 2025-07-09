@@ -1,0 +1,16 @@
+{
+    "id": "2023NeurIPS_zeroNav",
+    "authors": "Arjun Majumdar*, Gunjan Aggarwal*, Bhavika Devnani, Judy Hoffman, Dhruv Batra",
+    "title": "ZSON: Zero-Shot Object-Goal Navigation using Multimodal Goal Embeddings",
+    "venue": "neurips",
+    "year": "2022",
+    "pdf": "https://arxiv.org/abs/2206.12403",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023NeurIPS_zeroshotNav.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

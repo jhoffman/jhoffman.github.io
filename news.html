@@ -1,0 +1,15 @@
+---
+layout: default
+title: News
+---
+
+<section id="news">
+  <h2>Recent News</h2>
+  {% for item in site.data.news %}
+  <article class="news-item">
+    <h3>{{ item.title }}</h3>
+    <p class="date">{{ tem.date | date: "%B %d, %Y" }}</p>
+    <p>{{ item.description }}</p>
+  </article>
+  {% endfor %}
+</section>

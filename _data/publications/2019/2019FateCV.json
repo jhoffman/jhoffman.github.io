@@ -1,0 +1,23 @@
+{
+    "id": "2019FateCV",
+    "authors": "Benjamin Wilson, Judy Hoffman, Jamie Morgenstern",
+    "title": "Predictive Inequity in Object Detection",
+    "venue": "Workshop on Fairness Accountability Transparency and Ethics in Computer Vision at CVPR",
+    "year": "2019",
+    "pdf": "https://arxiv.org/abs/1902.11097",
+    "slides": "",
+    "code": "https://github.com/benjaminrwilson/inequity-release",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2019FateCV.png",
+    "project": "",
+    "is_new": false,
+    "special": "",
+    "press": 
+    {
+        "Vox": "https://vox.com/future-perfect/2019/3/5/18251924/self-driving-car-racial-bias-study-autonomous-vehicle-dark-skin'>Vox</a>",
+        "Business Insider": "https://www.businessinsider.com/self-driving-cars-worse-at-detecting-dark-skin-study-says-2019-3",
+        "The Guardian": "https://www.theguardian.com/technology/shortcuts/2019/mar/13/driverless-cars-racist",
+        "NBC News": "https://www.nbcnews.com/mach/video/people-of-color-could-be-at-risk-if-self-driving-cars-aren-t-properly-trained-study-says-1494218819954"
+    },
+    "abstract": "In this work, we investigate whether state-of-theart object detection systems have equitable predictive performance on pedestrians with different skin tones. This work is motivated by many recent examples of ML and vision systems displaying higher error rates for certain demographic groups than others. We annotate an existing large scale dataset which contains pedestrians, BDD100K, with Fitzpatrick skin tones in ranges [1-3] or [4-6]. We then provide an in depth comparative analysis of performance between these two skin tone groupings, finding that neither time of day nor occlusion explain this behavior, suggesting this disparity is not merely the result of pedestrians in the 4-6 range appearing in more difficult scenes for detection. We investigate to what extent time of day, occlusion, and reweighting the supervised loss during training affect this predictive bias."
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2023_cvprw_predictiveConfounders",
+    "authors": "Sruthi Sudhakar, Viraj Uday Prabhu, Olga Russakovsky, Judy Hoffman",
+    "title": "ICON2: Reliably Benchmarking Predictive Inequity in Object Detection",
+    "venue": "cvprw-ssad",
+    "year": "2023",
+    "pdf": "https://arxiv.org/abs/2306.04482",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023_cvprw_predictive.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

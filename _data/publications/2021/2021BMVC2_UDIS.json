@@ -1,0 +1,16 @@
+{
+    "id": "2021BMVC_UDIS",
+    "authors": "Arvind Krishnakumar, Viraj Prabhu, Sruthi Sudhakar, Judy Hoffman",
+    "title": "UDIS: Unsupervised Discovery of Bias in Deep Visual Recognition Models",
+    "venue": "bmvc",
+    "year": "2021",
+    "pdf": "https://arxiv.org/abs/2110.15499",
+    "slides": "",
+    "code": "https://github.com/akrishna77/bias-discovery",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2021BMVC_UDIS.png",
+    "project": "https://www.bmvc2021-virtualconference.com/conference/papers/paper_0362.html",
+    "is_new": false,
+	"special": "",
+    "abstract": "Deep learning models have been shown to learn spurious correlations from data that sometimes lead to systematic failures for certain subpopulations. Prior work has typically diagnosed this by crowdsourcing annotations for various protected attributes and measur- ing performance, which is both expensive to acquire and difficult to scale. In this work, we propose UDIS, an unsupervised algorithm for surfacing and analyzing such failure modes. UDIS identifies subpopulations via hierarchical clustering of dataset embeddings and surfaces systematic failure modes by visualizing low performing clusters along with their gradient-weighted class-activation maps. We show the effectiveness of UDIS in identifying failure modes in models trained for image classification on the CelebA and MSCOCO datasets. UDIS is available at https://github.com/akrishna77/ bias- discovery."
+}

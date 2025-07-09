@@ -1,0 +1,18 @@
+{
+    "id": "2025Polar",
+    "authors": "Fiona Ryan, Josef Sivic, Fabian Caba Heilbron, Judy Hoffman, James M. Rehg, Bryan Russell",
+    "title": "Improving Personalized Search with Regularized Low-Rank Parameter Updates",
+    "venue": "cvpr",
+    "year": "2025",
+    "pdf": "",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2025cvpr_POLAR.png",
+    "project": "",
+	"video": "",
+    "is_new": true,
+	"press": "",
+	"special": "Highlight",
+    "abstract": ""
+}

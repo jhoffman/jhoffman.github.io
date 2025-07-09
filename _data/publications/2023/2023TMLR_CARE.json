@@ -1,0 +1,17 @@
+{
+    "id": "2023TMLR_CARE",
+    "authors": "Viraj Prabhu, David Acuna, Yuan-Hong Liao, Rafid Mahmood, Marc T. Law, Judy Hoffman, Sanja Fidler, James Lucas",
+    "title": "Bridging the Sim2Real gap with CARE: Supervised Detection Adaptation with Conditional Alignment and Reweighting",
+    "venue": "tmlr",
+    "year": "2023",
+    "pdf": "https://arxiv.org/abs/2302.04832",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023_care.jpg",
+    "project": "",
+    "is_new": false,
+	"press": "",
+	"special": "",
+    "abstract": ""
+}

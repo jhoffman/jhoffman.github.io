@@ -1,0 +1,16 @@
+{
+    "id": "2023ICCV_FACTS",
+    "authors": "Sriram Yenamandra, Pratik Ramesh, Viraj Prabhu, Judy Hoffman",
+    "title": "FACTS: First Amplify Correlations and Then Slice to Discover Bias",
+    "venue": "iccv",
+    "year": "2023",
+    "pdf": "https://openaccess.thecvf.com/content/ICCV2023/papers/Yenamandra_FACTS_First_Amplify_Correlations_and_Then_Slice_to_Discover_Bias_ICCV_2023_paper.pdf",
+    "slides": "",
+    "code": "https://github.com/yvsriram/FACTS",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023iccv_facts.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

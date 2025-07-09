@@ -1,0 +1,17 @@
+{
+    "id": "2011irosJaillet",
+    "authors": "Leonard Jaillet, Judy Hoffman, Jur van den Berg, Pieter Abbeel, Josep M. Porta, Ken Goldberg",
+    "title": "EG-RRT: Environment-Guided Random Trees for Kinodynamic Motion Planning with Uncertainty and Obstacles",
+    "venue": "iros",
+    "year": "2011",
+    "pdf": "https://goldberg.berkeley.edu/pubs/Jaillet_et_al_IROS2011.pdf",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2011irosJaillet.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+	"video": "",
+    "abstract": "Existing sampling-based robot motion planning methods are often inefficient at finding trajectories for kinodynamic systems, especially in the presence of narrow passages between obstacles and uncertainty in control and sensing. To address this, we propose EG-RRT, an Environment-Guided variant of RRT designed for kinodynamic robot systems that combines elements from several prior approaches and may incorporate a cost model based on the LQG-MP framework to estimate the probability of collision under uncertainty in control and sensing. We compare the performance of EG-RRT with several prior approaches on challenging sample problems. Results suggest that EG-RRT offers significant improvements in performance."
+}

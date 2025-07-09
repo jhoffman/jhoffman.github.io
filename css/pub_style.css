@@ -1,0 +1,122 @@
+/* Publications Page Styles */
+
+/* Container for list of publication cards */
+.publication-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+/* Publication card: grid layout with thumbnail left, content right */
+.publication-summary {
+  display: grid;
+  grid-template-columns: clamp(200px, 30%, 400px) minmax(0, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "thumb content";
+  gap: var(--spacing-md);
+  align-items: start;
+  grid-auto-rows: min-content;
+  padding-top: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+}
+
+/* Thumbnail styling */
+.pub-thumb {
+  grid-area: thumb;
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+/* Content wrapper styling */
+.pub-content {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;       /* 2px between items */
+  max-width: 600px;    /* cap text width for readability */
+}
+
+/* Title and metadata */
+.publication-summary h4 {
+  margin: 0 0 0.125rem; /* tighten space under title */
+}
+
+.publication-summary .meta {
+  margin: 0 0 0.25rem;  /* small gap under meta */
+  font-size: 0.875rem;
+}
+
+/* Abstract styling */
+.publication-summary .abstract {
+  margin: 0 0 0.25rem;
+}
+
+/* Link badges */
+.pub-content .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.pub-content .links a {
+  background-color: var(--color-accent);
+  color: var(--color-surface);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  transition: background-color 0.2s;
+}
+
+.pub-content .links a:hover {
+  background-color: var(--color-primary);
+}
+
+/* Press mentions */
+.pub-content .press {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-muted-text);
+}
+
+.pub-content .press a {
+  color: var(--color-text);
+  margin-right: var(--spacing-sm);
+}
+
+.pub-content .press a:hover {
+  color: var(--color-accent);
+}
+
+/* Special callout */
+.pub-content .special {
+  margin: 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--color-accent-light);
+  border-left: 4px solid var(--color-accent);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsive: stack on narrow screens */
+@media (max-width: 600px) {
+  .publication-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .pub-thumb {
+    margin: 0 auto var(--spacing-md);
+    width: clamp(120px, 30vw, 180px);
+  }
+
+  .pub-content {
+    text-align: center;
+    max-width: none;
+  }
+}

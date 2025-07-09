@@ -1,0 +1,18 @@
+{
+    "id": "2025Knots",
+    "authors": "George Stoica*, Pratik Ramesh*, Boglarka Ecsedi, Leshem Choshen, Judy Hoffman",
+    "title": "Model Merging with SVD to tie the KnOTS",
+    "venue": "iclr",
+    "year": "2025",
+    "pdf": "https://arxiv.org/abs/2410.19735",
+    "slides": "",
+    "code": "https://github.com/gstoica27/KnOTS",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2024Knots.gif",
+    "project": "",
+	"video": "",
+    "is_new": true,
+	"press": {"GT CoC": "https://sites.gatech.edu/research/iclr-2025/"},
+	"special": "",
+    "abstract": ""
+}

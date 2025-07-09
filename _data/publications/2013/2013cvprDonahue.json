@@ -1,0 +1,18 @@
+{
+    "id": "2013cvprDonahue",
+    "authors": "Jeff Donahue, Judy Hoffman,  Erik Rodner,  Kate Saenko,  Trevor Darrell",
+    "title": "Semi-Supervised Domain Adaptation with Instance Constraints",
+    "venue": "cvpr",
+    "year": "2013",
+    "pdf": "https://www.cv-foundation.org/openaccess/content_cvpr_2013/papers/Donahue_Semi-supervised_Domain_Adaptation_2013_CVPR_paper.pdf",
+    "slides": "",
+	"poster": "posters/2013cvprDonahue.pdf",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2013cvprDonahue.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+	"video": "",
+    "abstract": ""
+}

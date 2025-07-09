@@ -1,0 +1,16 @@
+{
+    "id": "2022NeurIPSW_BiSA",
+    "authors": "George Stoica, Taylor Hearn, Bhavika Devnani, Judy Hoffman",
+    "title": "Bi-Directional Self-Attention for Vision Transformers",
+    "venue": "neurips-vtta-workshop",
+    "year": "2022",
+    "pdf": "https://gstoica27.github.io/assets/pdf/BiSA_VTTA_Submission.pdf",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2022neurips_bisa.png",
+    "project": "",
+    "is_new": false,
+	"special": "Best Paper Award",
+    "abstract": ""
+}

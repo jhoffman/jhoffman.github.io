@@ -1,0 +1,16 @@
+{
+    "id": "2018neurips_madap",
+    "authors": "Judy Hoffman, Mehryar Mohri, Ningshan Zhang",
+    "title": "Algorithms and Theory for Multiple-Source Adaptation",
+    "venue": "nips",
+    "year": "2018",
+    "pdf": "https://papers.nips.cc/paper/8046-algorithms-and-theory-for-multiple-source-adaptation.pdf",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2018_nips_madap.jpg",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": "We present a number of novel contributions to the multiple-source adaptation problem. We derive new normalized solutions with strong theoretical guarantees for the cross-entropy loss and other similar losses. We also provide new guarantees that hold in the case where the conditional probabilities for the source domains are distinct. Moreover, we give new algorithms for determining the distributionweighted combination solution for the cross-entropy loss and other losses. We report the results of a series of experiments with real-world datasets. We find that our algorithm outperforms competing approaches by producing a single robustmodel that performs well on any target mixture distribution. Altogether, our theory, algorithms, and empirical results provide a full solution for the multiple-source adaptation problem with very practical benefits."
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2016icipPeng",
+    "authors": "Xingchao Peng, Judy Hoffman,  Stella Yu,  Kate Saenko",
+    "title": "Fine-To-Coarse Knowledge Transfer For Low-Res Image Classification",
+    "venue": "icip",
+    "year": "2016",
+    "pdf": "https://arxiv.org/pdf/1605.06695.pdf",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2016icipPeng.jpg",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": "We address the difficult problem of distinguishing fine-grained object categories in low resolution images. Wepropose a simple an effective deep learning approach that transfers fine-grained knowledge gained from high resolution training data to the coarse low-resolution test scenario. Such fine-to-coarse knowledge transfer has many real world applications, such as identifying objects in surveillance photos or satellite images where the image resolution at the test time is very low but plenty of high resolution photos of similar objects are available. Our extensive experiments on two standard benchmark datasets containing fine-grained car models and bird species demonstrate that our approach can effectively transfer fine-detail knowledge to coarse-detail imagery."
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2022CVPR_GeoDA",
+    "authors": "Viraj Prabhu, Ramprasaath R. Selvaraju, Judy Hoffman, Nikhil Naik",
+    "title": "Can domain adaptation make object recognition work for everyone?",
+    "venue": "cvpr-l3d-workshop",
+    "year": "2022",
+    "pdf": "https://arxiv.org/abs/2204.11122",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2022CVPR_GeoDA.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": "Despite the rapid progress in deep visual recognition, modern computer vision datasets significantly overrepresent the developed world and models trained on such datasets underperform on images from unseen geographies. We investigate the effectiveness of unsupervised domain adaptation (UDA) of such models across geographies at closing this performance gap. To do so, we first curate two shifts from existing datasets to study the Geographical DA problem, and discover new challenges beyond data distribution shift: context shift, wherein object surroundings may change significantly across geographies, and subpopulation shift, wherein the intra-category distributions may shift. We demonstrate the inefficacy of standard DA methods at Geographical DA, highlighting the need for specialized geographical adaptation solutions to address the challenge of making object recognition work for everyone."
+}

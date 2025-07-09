@@ -1,0 +1,16 @@
+{
+    "id": "2023CIKM_conceptevo",
+    "authors": "Haekyu Park, Seongmin Lee, Benjamin Hoover, Austin P. Wright, Omar Shaikh, Rahul Duggal, Nilaksh Das, Kevin Li, Judy Hoffman, Duen Horng Chau",
+    "title": "Concept Evolution in Deep Learning Training: A Unified Interpretation Framework and Discoveries",
+    "venue": "cikm",
+    "year": "2023",
+    "pdf": "https://arxiv.org/abs/2203.16475",
+    "slides": "",
+    "code": "https://github.com/poloclub/ConceptEvo",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023cikm_conceptevo.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

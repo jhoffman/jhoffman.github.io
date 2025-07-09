@@ -1,0 +1,94 @@
+---
+layout: default
+title: Lab
+---
+
+
+
+<section id="lab">
+  <h2>Hoffman AI Lab Members</h2>
+  <ul class="lab-members">
+		
+	{% assign current_members = site.data.lab 
+		      | where_exp: "member", "member.next == 'current'" %}
+    {% for member in current_members %}
+		
+    <li id="{{ member.id }}">
+      <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+      <h3><a href="{{ member.URL }}">{{ member.name }}</a></h3>
+      <p>{{ member.role }}</p>
+      <p>({{ member.year_started }} - )</p>
+    </li>
+    {% endfor %}
+	
+  </ul>
+  
+  
+  <br>
+  
+  <h2>Prospective Members</h2>
+  <p> Thanks for your interest in our lab! </p>
+  <ul>
+	  <li>
+		  <h3>Georgia Tech Students</h3>
+			  <ul>
+				  <li><strong>Current PhD Students:</strong> Please email Judy directly. Include your CV, relevant experience, semester interested in getting started, and funding requirements. 
+				  </li>
+				  <li>
+					  <strong>Current MS and BS Students:</strong> We do not currently have any open positions for Fall 2025. When positions are available we will include an application link here. Note, while prior research experience is not a requirement to join the lab, successful members will have prior experience through courses or projects in Computer Vision, Deep Learning, and Machine Learning. 
+				  </li>
+			  </ul>
+	  </li>
+	  <li>		  
+		  <h3>Students Outside of Georgia Tech</h3>
+		  <ul>
+			  <li>Please apply directly to the College of Computing. Due to the volume of email I receive, I cannot reply to individual requests. I accept PhD students from both the <a href="https://www.cc.gatech.edu/degree-programs/phd-computer-science">CS PhD</a> and the <a href="https://ml.gatech.edu/phd">ML PhD</a> programs. 
+			  <li>My group is not accepting visitors from outside Georgia Tech at this time.</li>
+		  </ul>
+	  </li>
+  </ul>
+  
+  
+  <br>
+  
+  {%- comment -%}
+    First, pull in only those with a nonblank `next` field
+  {%- endcomment -%}
+{% assign alumni = site.data.lab 
+    | where_exp: "member", "member.next != 'current'" %}
+  
+  <details class="alumni-section">
+    <summary>Alumni</summary>
+  
+    {%- comment -%}
+      Define your desired role order; be sure these strings match
+      exactly the `role` values in your CSV!
+    {%- endcomment -%}
+    {% assign role_order = "Postdoc,PhD,MS,BS/MS,BS" | split: "," %}
+
+    {%- for role in role_order -%}
+      {%- assign members = alumni | where: "role", role -%}
+      {%- if members and members.size > 0 -%}
+        <h3>{{ role }}</h3>
+        <ul class="lab-members">
+          {%- for member in members -%}
+            <li id="{{ member.id }}">
+              <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+              <h4>{{ member.name }}</h4>
+              <p>{{ member.role }}</p>
+    <p>({{ member.year_started }}
+		{% if member.year_ended != '' %} - {{ member.year_ended }}{% endif %})
+	</p>
+	{% if member.next != 'x' %}
+		<p><em> {{ member.next }} </em></p>
+	{% endif %}
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    {%- endfor -%}
+  </details>
+  
+
+  
+</section>

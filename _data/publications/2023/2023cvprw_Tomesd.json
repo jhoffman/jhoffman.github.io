@@ -1,0 +1,16 @@
+{
+    "id": "2023_cvprw_tomesd",
+    "authors": "Daniel Bolya, Judy Hoffman",
+    "title": "Token Merging for Fast Stable Diffusion",
+    "venue": "cvprw-ecv",
+    "year": "2023",
+    "pdf": "https://arxiv.org/abs/2303.17604",
+    "slides": "",
+    "code": "https://github.com/dbolya/tomesd",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023_tomesd.jpeg",
+    "project": "",
+    "is_new": false,
+	"special": "Oral Presentation",
+    "abstract": "The landscape of image generation has been forever changed by open vocabulary diffusion models. However, at their core these models use transformers, which makes generation slow. Better implementations to increase the throughput of these transformers have emerged, but they still evaluate the entire model. In this paper, we instead speed up diffusion models by exploiting natural redundancy in generated images by merging redundant tokens. After making some diffusion-specific improvements to Token Merging (ToMe), our ToMe for Stable Diffusion can reduce the number of tokens in an existing Stable Diffusion model by up to 60% while still producing high quality images without any extra training. In the process, we speed up image generation by up to 2x and reduce memory consumption by up to 5.6x. Furthermore, this speed-up stacks with efficient implementations such as xFormers, minimally impacting quality while being up to 5.4x faster for large images."
+}

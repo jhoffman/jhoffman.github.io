@@ -1,0 +1,83 @@
+---
+layout: default
+title: Publications
+---
+
+<section id="publications">
+  <h2>Publications</h2>
+	   
+  {%- comment -%}
+    1. Initialize an empty array
+  {%- endcomment -%}
+  {% assign years_array = "" | split: "" %}
+
+  {%- comment -%}
+    2. Loop over the hash with key,value destructuring
+       (year will be the folder name, e.g. "2025")
+  {%- endcomment -%}
+  {% for year in site.data.publications %}
+    {% assign years_array = years_array | push: year[0] %}
+  {% endfor %}
+
+  {%- comment -%}
+    3. Sort descending (newest year first)
+  {%- endcomment -%}
+  {% assign years = years_array | sort | reverse %}
+
+  {% for raw_year in years %}
+	  {% assign year = raw_year | append: "" %}
+      <h3>{{ year }}</h3>
+
+    {% assign pubs = site.data.publications[year] %}
+
+    <ul class="publication-list">
+      {% for pub_item in pubs %}
+	  	{% assign pub = pub_item[1] %}
+	
+        <li class="publication-summary">
+
+          {% if pub.fig and pub.fig != "" %}
+            <img src="{{ pub.fig | relative_url }}" alt="{{ pub.title }} preview">
+          {% endif %}
+
+		  <div class="pub-content">
+          <h4>			
+			{% if pub.is_new %}
+              <span class="badge new">New</span>
+            {% endif %} 
+			  {{ pub.title }}             
+		 </h4>
+          <p class="meta">
+            {{ pub.authors }}. <em>{{ site.data.venues[pub.venue] }}</em>, {{ pub.year }}.
+          </p>
+		  
+          {% if pub.special and pub.special != "" %}
+            <p class="special">{{ pub.special }}</p>
+          {% endif %}
+		  
+
+          <p class="links">
+            {% if pub.pdf and pub.pdf != "" %}<a href="{{ pub.pdf }}"    target="_blank">PDF</a>{% endif %}
+            {% if pub.slides and pub.slides != "" %} <a href="{{ pub.slides }}" target="_blank">Slides</a>{% endif %}
+            {% if pub.code and pub.code != "" %} <a href="{{ pub.code }}"  target="_blank">Code</a>{% endif %}
+            {% if pub.project and pub.project != "" %} <a href="{{ pub.project }}"target="_blank">Project</a>{% endif %}
+            {% if pub.video and pub.video != "" %} <a href="{{ pub.video }}" target="_blank">Video</a>{% endif %}
+          </p>
+
+          {% if pub.press and pub.press != "" %}
+            <p class="press">
+              <strong> Press:</strong>
+              {% for press_item in pub.press %}
+                <a href="{{ press_item[1] }}" target="_blank">{{ press_item[0] }}</a>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </p>
+          {% endif %}
+
+
+	  </div>
+
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</section>

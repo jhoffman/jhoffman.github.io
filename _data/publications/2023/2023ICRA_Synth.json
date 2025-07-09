@@ -1,0 +1,16 @@
+{
+    "id": "2023ICRA_Synth",
+    "authors": "Arun Reddy, Ketul Shah, William Paul, Rohita Mocharla, Judy Hoffman, Kapil Katyal, Dinesh Manocha, Celso de Melo, Rama Chellappa",
+    "title": "Synthetic-to-Real Domain Adaptation for Action Recognition: A Dataset and Baseline Performances",
+    "venue": "icra",
+    "year": "2023",
+    "pdf": "https://arxiv.org/abs/2303.10280",
+    "slides": "",
+    "code": "https://github.com/reddyav1/RoCoG-v2",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2023_ICRAsyn.gif",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

@@ -1,0 +1,16 @@
+{
+    "id": "2022arXiv_Zaugco",
+    "authors": "Viraj Prabhu*, Shivam Khare*, Deeksha Kartik, Judy Hoffman",
+    "title": "AUGCO: Augmentation Consistency-guided Self-training for Source-free Domain Adaptive Semantic Segmentation",
+    "venue": "eccvw-cviw",
+    "year": "2022",
+    "pdf": "https://arxiv.org/abs/2107.10140",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2022_augco.png",
+    "project": "",
+    "is_new": false,
+	"special": "",
+    "abstract": ""
+}

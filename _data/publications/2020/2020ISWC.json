@@ -1,0 +1,17 @@
+{
+    "id": "2020ISWC",
+    "authors": "Harish Haresamudram, Apoorva Beedu, Varun Agrawal, Patrick L Grady, Irfan Essa, Judy Hoffman, Thomas Ploetz",
+    "title": "Masked Reconstruction based Self-Supervision for Human Activity Recognition",
+    "venue": "iswc",
+    "year": "2020",
+    "pdf": "https://harkash.github.io/files/masked-reconstruction.pdf",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2020ISWC.png",
+    "project": "",
+    "video": "",
+    "is_new": false,
+    "special": "",
+    "abstract": ""
+}
