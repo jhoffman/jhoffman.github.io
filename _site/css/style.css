@@ -597,6 +597,70 @@ a:hover {
   }
 }
 
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* make sure the table itself can shrink down */
+.edu-exp-table {
+  min-width: 0;
+}
+
+
+@media (max-width: 600px) {
+  .edu-exp-table,
+  .edu-exp-table thead,
+  .edu-exp-table tbody,
+  .edu-exp-table th,
+  .edu-exp-table td,
+  .edu-exp-table tr {
+    display: block;
+  }
+
+  /* hide the real headers */
+  .edu-exp-table thead {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .edu-exp-table tr {
+    margin: 0 0 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5em;
+    background: #fff;
+  }
+
+  .edu-exp-table td {
+    /* add space for the “label” */
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .edu-exp-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 45%;
+    padding-left: 0.5em;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  /* shrink the logo a bit */
+  .edu-exp-table td img {
+    max-width: 50px;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
+
+
 /***		Contact styling ***/
 /* Contact section at bottom of homepage */
 #contact {
