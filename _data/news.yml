@@ -1,10 +1,11 @@
 # _data/news.yml
 
+- date: 2025-06-06
+  news: "I am is giving two invited talks at the <a href='https://uncertainty-cv.github.io/2025'>Uncertainty Workshop</a> and the <a href='https://sites.google.com/view/nexd25/home'>Next Generation of Data Workshop</a>. Congratulations to Fiona on presenting two papers at CVPR: <a href='https://arxiv.org/abs/2412.09586'>Gazelle</a> for gaze recognition and <a href='https://arxiv.org/abs/2506.10182'>Polar</a> for improving personalized search!"
+
 - date: 2025-04-07
   news: "Honored to have received <a href='https://www.cc.gatech.edu/news/computing-celebrates-2025-faculty-promotion-and-tenure-cases'>Tenure at Georgia Tech</a>! "
 
-- date: 2025-06-06
-  news: "I am is giving two invited talks at the <a href='https://uncertainty-cv.github.io/2025'>Uncertainty Workshop</a> and the <a href='https://sites.google.com/view/nexd25/home'>Next Generation of Data Workshop</a>. Congratulations to Fiona on presenting two papers at CVPR: <a href='https://arxiv.org/abs/2412.09586'>Gazelle</a> for gaze recognition and <a href='https://arxiv.org/abs/2506.10182'>Polar</a> for improving personalized search!"
 
 - date: 2024-07-15
   news: "Excited that DeCAF has won the <a href='https://icml.cc/virtual/2024/awards_detail'>ICML 2024 test of time award</a>!" 

@@ -4,10 +4,10 @@ title: About
 permalink: /about/
 ---
 
-<section id="About">
+<section class="experience-section">
 	
   <h1>Education & Experience</h1>
-  <div class="table-responsive">
+
     <table class="edu-exp-table">
       <thead>
         <tr>
@@ -31,17 +31,19 @@ permalink: /about/
         {% endfor %}
       </tbody>
     </table>
-  </div>
 
+</section>
 
-	
+<section id="Awards">
 <h1>Selected Awards</h1>
 <ul>
 {% for item in site.data.awards %}
 	<li> <a href="{{ item[1].url }}"> {{item[1].name}} ({{item[1].year}})</a> </li>
 {% endfor %}
 </ul>
-	
+</section>	
+
+<section id="Service">
 <h1>Selected Service and Outreach</h1>
 
 <ul>
