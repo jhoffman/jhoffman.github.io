@@ -525,91 +525,51 @@ a:hover {
   margin: var(--spacing-lg) 0;
 }
 
+/* ───────────────────────────────────────────────────────────────
+   Base table (desktop + tablet)
+   ─────────────────────────────────────────────────────────────── */
 .edu-exp-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 600px; /* ensures columns don’t collapse too narrow */
+  table-layout: fixed;    /* evenly distribute columns */
 }
 
-.edu-exp-table thead th {
-  text-align: left;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-bottom: 2px solid var(--color-muted-text);
-  font-weight: 600;
-}
-
-.edu-exp-table tbody tr {
-  transition: background-color 0.2s;
-}
-
-.edu-exp-table tbody tr:hover {
-  background-color: var(--color-bg);
-}
-
+.edu-exp-table th,
 .edu-exp-table td {
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-bottom: 1px solid #e0e0e0;
-  vertical-align: middle;
+  padding: 0.5em;
+  text-align: left;
+  white-space: normal;        /* allow wrapping */
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
-.edu-exp-table .logo-cell {
-  width: 60px;
-}
-
-.edu-exp-table .logo-cell img {
+.edu-exp-table img {
+  max-width: 40px;
+  height: auto;
   display: block;
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-  margin: 0 auto;
+  margin: 0 auto 0.5em;
 }
 
-/* Responsive: stack columns vertically on very small screens */
-@media (max-width: 480px) {
-  .edu-exp-table,
-  .edu-exp-table thead,
-  .edu-exp-table tbody,
-  .edu-exp-table th,
-  .edu-exp-table td,
-  .edu-exp-table tr {
-    display: block;
-  }
-  .edu-exp-table thead {
-    display: none;
-  }
-  .edu-exp-table tbody tr {
-    margin-bottom: var(--spacing-lg);
-  }
-  .edu-exp-table td {
-    padding: var(--spacing-sm);
-    text-align: right;
-    position: relative;
-  }
-  .edu-exp-table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: var(--spacing-md);
-    font-weight: 600;
-    text-align: left;
-  }
-  .edu-exp-table .logo-cell {
-    text-align: center;
-  }
-}
-
-.table-responsive {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* make sure the table itself can shrink down */
-.edu-exp-table {
-  min-width: 0;
-}
-
-
+/* ───────────────────────────────────────────────────────────────
+   Mobile tweaks: max-width 600px
+   ─────────────────────────────────────────────────────────────── */
 @media (max-width: 600px) {
+
+  /* ==== OPTION 1: Uniformly scale the table down ==== */
+  .edu-exp-table {
+    transform: scale(0.85);
+    transform-origin: top left;
+  }
+
+  /* You may need to reduce font-size/padding further if it still overflows: */
+  .edu-exp-table th,
+  .edu-exp-table td {
+    font-size: 0.85rem;
+    padding: 0.3em;
+  }
+
+
+  /* ==== OPTION 2: Stack into “cards” instead of a table ==== */
   .edu-exp-table,
   .edu-exp-table thead,
   .edu-exp-table tbody,
@@ -619,43 +579,42 @@ a:hover {
     display: block;
   }
 
-  /* hide the real headers */
-  .edu-exp-table thead {
+  /* hide the header row */
+  .edu-exp-table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
 
+  /* each data row becomes a card */
   .edu-exp-table tr {
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 0.5em;
     background: #fff;
   }
 
+  /* cells get padded to make room for their “label” */
   .edu-exp-table td {
-    /* add space for the “label” */
     position: relative;
     padding-left: 50%;
     text-align: left;
   }
 
+  /* inject the header label before each cell */
   .edu-exp-table td::before {
     content: attr(data-label);
     position: absolute;
-    left: 0;
+    left: 0.5em;
     top: 0.5em;
-    width: 45%;
-    padding-left: 0.5em;
-    font-weight: 600;
+    font-weight: bold;
     white-space: nowrap;
   }
 
-  /* shrink the logo a bit */
+  /* shrink logos inside cards */
   .edu-exp-table td img {
     max-width: 50px;
-    display: block;
     margin-bottom: 0.5em;
   }
 }
