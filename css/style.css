@@ -531,133 +531,57 @@ a:hover {
 }
 
 
-/* ───────────────────────────────────────────────────────────────
-   Base table (desktop + tablet)
-   ─────────────────────────────────────────────────────────────── */
-.edu-exp-table {
-  width: 100%;
-  border-collapse: collapse;
-  table-layout: fixed;    /* evenly distribute columns */
-}
 
-.edu-exp-table th,
-.edu-exp-table td {
-  padding: 0.5em;
-  text-align: left;
-  white-space: normal;        /* allow wrapping */
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
-}
-
-.edu-exp-table img {
-  max-width: 40px;
-  height: auto;
-  display: block;
-  margin: 0 auto 0.5em;
-}
-
-/* ───────────────────────────────────────────────────────────────
-   Mobile tweaks: max-width 600px
-   ─────────────────────────────────────────────────────────────── */
-/*@media (max-width: 600px) {*/
-
-
-  /* You may need to reduce font-size/padding further if it still overflows: */
-  .edu-exp-table th,
-  .edu-exp-table td {
-    font-size: 0.85rem;
-    padding: 0.3em;
-  }
-
-
-  /* ==== OPTION 2: Stack into “cards” instead of a table ==== */
-  .edu-exp-table,
-  .edu-exp-table thead,
-  .edu-exp-table tbody,
-  .edu-exp-table th,
-  .edu-exp-table td,
-  .edu-exp-table tr {
-    display: block;
-  }
-
-  /* hide the header row */
-  .edu-exp-table thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-  }
-
-  /* each data row becomes a card */
-  .edu-exp-table tr {
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 0.5em;
-    background: #fff;
-  }
-
-  /* cells get padded to make room for their “label” */
-  .edu-exp-table td {
-    position: relative;
-    padding-left: 50%;
-    text-align: left;
-  }
-
-  /* inject the header label before each cell */
-  .edu-exp-table td::before {
-    content: attr(data-label);
-    position: absolute;
-    left: 0.5em;
-    top: 0.5em;
-    font-weight: bold;
-    white-space: nowrap;
-  }
-
-  /* shrink logos inside cards */
-  .edu-exp-table td img {
-    max-width: 50px;
-    margin-bottom: 0.5em;
-  }
-	/*}*/
-	/* ───────────────────────────────────────────────────────────────
-	   Desktop tweaks for card layout (min-width: 601px)
-	   ─────────────────────────────────────────────────────────────── */
-	@media (min-width: 601px) {
-	  /* increase the base font size on the table container */
-	  .edu-exp-table {
-	    font-size: 1.2rem;             /* ~16px if your root is 16px */
-	  }
-
-	  /* add more breathing room in each “card” */
-	  .edu-exp-table tr {
-	    padding: 1.2rem;               /* up from 0.75em */
-	  }
-
-	  /* bump up the cell text a touch */
-	  .edu-exp-table td {
-	    font-size: 1.1rem;          /* slightly larger */
-	    padding-left: 60%;           /* keep label space proportional */
-	  }
-
-	  /* labels inside each cell */
-	  .edu-exp-table td::before {
-	    font-size: 1.1rem;           /* clear but not too big */
-	    left: 1.2rem;                  /* match the row padding */
-	    top: 1.2rem;
-	  }
-
-	  /* logo size if you want it a bit bigger too */
-	  .edu-exp-table td img {
-	    max-width: 70px;             /* up from 50px */
-	    margin-bottom: 1em;
-	  }
+	/* container: fluid grid */
+	.edu-cards {
+	  display: grid;
+	  gap: 1rem;
+	  /* 1 col on mobile, 2–3 on desktop */
+	  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	  margin: 0;            /* you control spacing via gap */
+	  padding: 0;
 	}
 
-	/* Remove bottom margin on the very last card */
-	.edu-exp-table tr:last-child {
-	  margin-bottom: 0;
+	/* each card */
+	.edu-card {
+	  display: flex;
+	  align-items: center;
+	  background: #fff;
+	  border: 1px solid #ddd;
+	  border-radius: 4px;
+	  padding: 0.75rem;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 	}
 
+	/* logo */
+	.edu-card__logo {
+	  flex-shrink: 0;
+	  width: 48px;
+	  height: auto;
+	  margin-right: 0.75rem;
+	}
+
+	/* text block */
+	.edu-card__body {
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	/* institution/company name */
+	.edu-card__title {
+	  margin: 0 0 0.25rem;
+	  font-size: 1rem;
+	  line-height: 1.2;
+	}
+
+	/* role + years on same line */
+	.edu-card__meta {
+	  margin: 0;
+	  font-size: 0.9rem;
+	  color: #555;
+	  display: flex;
+	  gap: 0.5rem;
+	}
 
 
 

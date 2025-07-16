@@ -7,30 +7,22 @@ permalink: /about/
 <section class="experience-section">
 	
   <h1>Education & Experience</h1>
-
-    <table class="edu-exp-table">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Title</th>
-          <th>Organization</th>
-          <th>Years</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for item in site.data.experience %}
-
-        <tr>
-          <td class="logo-cell">
-            <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }} logo">
-          </td>
-					<td data-label="Title">{{ item.title }}</td>
-          <td data-label="Organization">{{ item.organization }}</td>
-          <td data-label="Years">{{ item.years }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+		
+		<section class="edu-cards">
+		  {% for item in site.data.experience %}
+		  <article class="edu-card">
+		    <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }} logo" class="edu-card__logo">
+		    <div class="edu-card__body">
+		      <h3 class="edu-card__title">{{ item.title }}</h3>
+		      <p class="edu-card__meta">
+		        <span class="edu-card__role">{{ item.organization }}</span>
+		        <span class="edu-card__years">{{ item.years }}</span>
+		      </p>
+		    </div>
+		  </article>
+		  {% endfor %}
+		</section>
+		
 
 </section>
 
