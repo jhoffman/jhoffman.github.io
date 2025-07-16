@@ -1,0 +1,100 @@
+---
+layout: default
+title: About
+---
+
+<section id="About">
+	
+  <h1>Education & Experience</h1>
+  <div class="table-container">
+    <table class="edu-exp-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Title</th>
+          <th>Organization</th>
+          <th>Years</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in site.data.experience %}
+
+        <tr>
+          <td class="logo-cell">
+            <img src="{{ item.logo | relative_url }}" alt="{{ item.organization }} logo">
+          </td>
+					<td data-label="Title">{{ item.title }}</td>
+          <td data-label="Organization">{{ item.organization }}</td>
+          <td data-label="Years">{{ item.years }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+
+	
+<h1>Selected Awards</h1>
+<ul>
+{% for item in site.data.awards %}
+	<li> <a href="{{ item[1].url }}"> {{item[1].name}} ({{item[1].year}})</a> </li>
+{% endfor %}
+</ul>
+	
+<h1>Selected Service and Outreach</h1>
+
+<ul>
+    <li>
+        <strong>Mentoring and Outreach</strong>
+        <ul>
+            <li>Mentor to junior researchers at CVPR Main Conference 2021,2022</li>
+            <li>Panelist at <a href="https://www.woodward.edu/">Woodward Academy High School</a> Discussion on Bias in Machine Learning, 2021</li>
+            <li><a href="https://aimsammi.org/">African Masters in Machine Intelligence</a> Research Mentor, 2020</li>
+            <li>Mentor at Women in Computer Vision (2018-2022)</li>
+            <li>Mentor at Doctorial Consortium, ICCV 2019, CVPR 2022</li>
+            <li>Mentor at Women in Machine Learning (2018)</li>
+        </ul>
+    </li>
+
+    <li><strong>Leadership</strong>
+        <ul>
+            <li>
+                Co-founder and continued advisor for <a href="https://sites.google.com/view/wicv/">Women in Computer Vision (WiCV)</a>, 2015 - Present <br>
+                <i>Provides support for junior researchers who idenify as women to attend (travel support), present (exposure), and receive mentorship at top Computer Vision Conferences. </i>
+			<li>Co-organizer Workshop on Responsible Computer Vision at ECCV, 2022</li>
+			<li>Co-organizer Workshop on Learning from Limited and Imperfect Data at ECCV, 2022</li>
+			<li>Co-organizer Workshop on Adversarial Robustness in the Real World at ECCV, 2022</li>
+            <li>Co-organizer LVIS Workshop and Challenge at ICCV, 2021</li>
+            <li>Co-organizer Adversarial Robustness in the Real World Workshop at ICCV, 2021 </li>
+            <li>Co-organizer Responsible Computer Vision Workshop at CVPR, 2021</li>
+            <li>Co-organizer Adversarial Machine Learning in Computer Vision Tutorial at CVPR, 2021</li>
+            <li>Co-organizer Learning from Limited and Imperfect Data Workshop at CVPR, 2021</li>
+            <li>Co-organizer Tutorial on Learning with Limited Labels at ICCV, 2019</li>
+            <li>Co-organizer TASK-CV Workshop, ICCV 2019</li>
+            <!--
+			<li>Co-organizer TASK-CV Workshop and Domain Adaptation Challenge, ECCV 2018</li>
+            <li>Co-organizer TASK-CV Workshop and Domain Adaptation Challenge, ICCV 2017</li>
+            <li>Co-organizer Transfer and Multi-task learning workshop at NeurIPS, 2015</li>
+			-->
+        </ul>
+    </li>
+    
+    <li> <strong>Recent Editorial Service</strong>
+        <ul>
+						<li>Area Chair NeurIPS 2025</li>
+			<li class="highlight">Program Chair CVPR, 2023 </li>
+			<li>Tutorial Chair ICCV, 2023</li>
+
+            <li>Associate Editor T-PAMI, 2021 - Present</li>
+            <li>Associate Editor IJCV, 2020 - 2022</li>
+            <li>Area Chair CVPR, 2019 - 2021</li>
+            <li>Area Chair NeurIPS, 2021</li>
+            <li>Area Chair ICLR, 2019-2020</li>
+            <li>Area Chair ICCV, 2019, 2021</li>
+            <li>Area Chair ICML, 2020</li>
+            <li>See CV for full reviewing list</li>
+        </ul>
+    </li>
+</ul>
+	
+</section>

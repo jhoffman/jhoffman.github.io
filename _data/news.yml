@@ -1,0 +1,72 @@
+# _data/news.yml
+
+- date: 2025-04-07
+  news: "Honored to have received <a href='https://www.cc.gatech.edu/news/computing-celebrates-2025-faculty-promotion-and-tenure-cases'>Tenure at Georgia Tech</a>! "
+
+- date: 2025-06-06
+  news: "I am is giving two invited talks at the <a href='https://uncertainty-cv.github.io/2025'>Uncertainty Workshop</a> and the <a href='https://sites.google.com/view/nexd25/home'>Next Generation of Data Workshop</a>. Congratulations to Fiona on presenting two papers at CVPR: <a href='https://arxiv.org/abs/2412.09586'>Gazelle</a> for gaze recognition and <a href='https://arxiv.org/abs/2506.10182'>Polar</a> for improving personalized search!"
+
+- date: 2024-07-15
+  news: "Excited that DeCAF has won the <a href='https://icml.cc/virtual/2024/awards_detail'>ICML 2024 test of time award</a>!" 
+
+- date: 2024-04-01
+  news: "Congratulations to Daniel Bolya and Sriram Yenamandra for receiving the outstanding Graduate Research Assistant and MS Research awards from GT College of Computing! Daniel also passed his dissertation defense! "
+
+- date: 2023-12-02
+  news: "Congratulations Dr Viraj Prabhu on graduating! "
+
+- date: 2023-11-01
+  news: "Invited Talks at <a href='https://geonet-challenge.github.io/ICCV2023/'>GeoNet</a> workshop at ICCV and <a href='https://sites.google.com/stanford.edu/corl2023ood'>OOD Generalization</a> at CoRL "
+
+- date: 2023-06-12
+  news: "Honored to receive the <a href='https://www.thecvf.com/?page_id=413#:~:text=Vidal%2C%20Y.%20Ma-,PAMI,-Young%20Researcher%20Award'>PAMI Young Researcher Award</a> at CVPR 2023!"
+
+- date: 2023-06-12
+  news: "Giving 4 invited talks at CVPR Workshops: <a href='https://sites.google.com/view/ecv23''>Efficient Deep Learning for Computer Vision</a>, <a href='https://sites.google.com/view/wicv/'>Women in Computer Vision</a>, <a href='https://robustart.github.io/'>Art of Robustness</a>, and <a href='https://vision4allseason.net/program-2/'>Vision for All Seasons</a>"
+
+- date: 2023-04-01
+  news: "Congratulations to George Stoica for being awarded the NSF-GRFP!"
+
+- date: 2023-03-01
+  news: "Recent Invited Seminars at Google Research and Boston University"
+
+- date: 2023-01-01
+  news: "Congratulations to Simar on receiving the Best Paper Award at <a href='https://www.agilerobotscorl2022.com/#h.4tb730sl4l7j'>CoRL Workshop on Agile Robots</a>!"
+
+- date: 2022-12-01
+  news: "Congratulations to George, Taylor and Bhavika on receiving the Best Paper Award at the <a href='https://sites.google.com/view/vtta-neurips2022''>VTTA NeurIPS workshop</a>! "
+
+- date: 2022-10-01
+  news: "Congratulations to Daniel Bolya and Hydra Attention Team on receiving the Best Paper Award at the ECCV CADL Worskshop! "
+
+- date: 2022-08-01
+  news: "Excited and Honored to receive the NSF CAREER Award!" 
+
+- date: 2022-06-01
+  news: "Three talks at CVPR 2022, <a href='https://human-centeredai.github.io/'>Human Centered AI Tutorial</a>, <a href='https://www.cs.cmu.edu/~shuk/vplow.html'>Visual Perception and Learning in an Open World</a>, and <a href='https://artofrobust.github.io/'>The Art of Robustness</a>"
+
+- date: 2022-05-01
+  news:	"Recent Invited Talks at MIT Vision and Graphics Seminar, <a href='https://iclrsrml.github.io/#:~:text=The%20intersection%20of%20various%20aspects,and%20their%20usage%20in%20applications.'>ICLR Workshop on Socially Responsible ML</a>, and UMD Deep Learning Seminar"
+
+- date: 2022-03-01
+  news: "Recipient of a <a href='https://research.google/outreach/research-scholar-program/recipients/'>Google Research Scholar Award</a>"
+
+- date: 2021-12-01
+  news: "I am honored to serve as a Program Committee Chair for CVPR 2023"
+
+- date: 2021-11-01
+  news: "Honored to have been selected as a <a href='https://news.samsung.com/global/samsung-ai-forum-2021-day-1-ai-research-for-tomorrow'>Samsung AI Researcher of the Year</a>, 2021! <!--Oct 2021: Upcoming talks at GT IRIM, UIUC Vision Seminar, and CMU Vision seminar."
+
+- date: 2021-10-21
+  news: "Upcoming Talk at ICCV 2021 <a href='https://sites.google.com/view/deepmtlworkshop/home''>Deep Multitask Learning Workshop</a>"
+
+- date: 2021-09-01
+  news: "I had a fun chat about life with Dhruv Batra on <a href='https://www.humanstories.ai/'>Humans of AI, Stories not Stats</a>"
+
+- date: 2021-11-01
+  news: "Congratulations to lead authors Viraj and Prithvi on accepted ICCV 2021 papers! "
+
+#[10/21] I am co-organizing the <a href="">Workshop on Adversarial Robustness in the Real World</a> at ICCV 2021. 
+#[10/21] Daniel and I are co-organizers on the LVIS Challenge at ICCV 2021, integrating TIDE into the evaluation
+#[6/21] Talks at CVPR 2021: <a href="https://eval.vision.rwth-aachen.de/rvsu-workshop21/">Robust Video Understanding</a> Workshop, Tutorial on <a href="https://advmlincv.github.io/cvpr21-tutorial/">Adversarial Machine Learning in Computer Vision</a>, and a Fireside chat with <a href="https://www.katecrawford.net/">Kate Crawford</a> at the Responsible Computer Vision Workshop! 
+#June 2023: Moderating <a href="https://cvpr2023.thecvf.com/virtual/2023/panel/23305">Keynote Panel on Vision, Language, and Creativity, at CVPR</a>-->

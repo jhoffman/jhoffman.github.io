@@ -1,0 +1,50 @@
+[
+  {
+    "logo": "/images/gt_seal.png",
+    "title": "Associate Professor",
+    "organization": "Georgia Institute of Technology",
+    "years": "2025-"
+  },
+  {
+    "logo": "/images/gt_seal.png",
+    "title": "Assistant Professor",
+    "organization": "Georgia Institute of Technology",
+    "years": "2019-2025"
+  },
+  {
+    "logo": "/images/meta-logo.svg",
+    "title": "Research Scientist",
+    "organization": "FAIR at Meta",
+    "years": "2018-2019"
+  },
+  {
+    "logo": "/images/ucb-logo.png",
+    "title": "Postdoc in Computer Science",
+    "organization": "University of California, Berkeley",
+    "years": "2017-2018"
+  },
+  {
+    "logo": "/images/stanford-logo.png",
+    "title": "Postdoc in Computer Science",
+    "organization": "Stanford University",
+    "years": "2016–2017"
+  },
+  {
+    "logo": "/images/ucb-logo.png",
+    "title": "Ph.D. in Electrical Engineering Computer Science",
+    "organization": "University of California, Berkeley",
+    "years": "2010-2016"
+  },
+  {
+    "logo": "/images/google-logo.png",
+    "title": "Research Intern",
+    "organization": "Google Research",
+    "years": "2012"
+  },
+  {
+    "logo": "/images/ucb-logo.png",
+    "title": "B.S. in Electrical Engineering Computer Science",
+    "organization": "University of California, Berkeley",
+    "years": "2006-2010"
+  }
+]

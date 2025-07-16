@@ -1,0 +1,68 @@
+{
+        "icml14-testoftime":{
+            "name": "ICML Test of Time Award (DeCAF Paper)",
+            "year": "2024",
+            "url": "https://icml.cc/virtual/2024/awards_detail"
+        },
+	"pami-young": {
+		"name": "PAMI Young Researcher Award",
+		"year": "2023",
+		"url": "https://tc.computer.org/tcpami/pami-young-researcher-award/#:~:text=This%20annual%20award%20recognizes%20a,the%20PAMI%2DTC%20awards%20committee."
+	},
+    "nsf_career": {
+      "name": "NSF CAREER Award",
+      "year": "2022",
+      "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2144194"
+    },
+    "google_scholar": {
+	"name": "Google Research Scholar Award",
+	"year": "2022",
+    "url": "https://research.google/outreach/research-scholar-program/recipients/"
+	},
+        "Samsung AI Researcher of the Year": {
+		"name": "Samsung AI Researcher of the Year",
+		"year": "2021",
+                "url": "https://news.samsung.com/global/samsung-ai-forum-2021-day-1-ai-research-for-tomorrow"
+	},
+
+	"Diversity and Inclusion Fellow": {
+		"name": "Diversity and Inclusion Fellow, Georgia Tech",
+		"year": "2021",
+                "url": "https://diversity.gatech.edu/2021-diversity-and-inclusion-fellows-bios"
+	},
+        "thankteacher2020": {
+                "name": "\"Thank-a-Teacher Award\" Center for the Enhancement of Teaching & Learning, Georgia Tech",
+                "year": "2020"
+        },
+	"NVIDIA Female Leader in CV": {
+		"name": "NVIDIA Female Leader in CV",
+		"year": "2020"
+	},
+	"thankteacher2019": {
+                "name": "\"Thank-a-Teacher Award\" Center for the Enhancement of Teaching & Learning, Georgia Tech",
+                "year": "2019"
+        },
+        "rising_stars2015": {
+		"name": "Rising Stars in EECS (Hosted at MIT)",
+		"year": "2015",
+		"url": "https://risingstars15-eecs.mit.edu/"
+	},
+	"nsf_grfp":
+	{
+		"name": "NSF Graduate Research Fellowship",
+		"year": "2012-2015",
+		"url": "https://www.nsfgrfp.org/"
+	},
+	"stern_fellowship":
+	{
+		"name": "Rosalie M. Stern Fellowship",
+		"year": "2010-2011",
+                "url": "https://grad.berkeley.edu/admissions/apply/fellowships-entering/"
+	},
+	"hopkin2010":
+	{
+		"name": "Arthur M. Hopkin Award",
+		"year": "2010",
+		"url": "https://www2.eecs.berkeley.edu/Students/Awards/9/"
+	}
+}

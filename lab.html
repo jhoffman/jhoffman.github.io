@@ -57,9 +57,10 @@ title: Lab
 {% assign alumni = site.data.lab 
     | where_exp: "member", "member.next != 'current'" %}
   
-  <details class="alumni-section">
-    <summary>Alumni</summary>
+	
   
+  <h2>Alumni</h2>
+	<p>We have been fortunate to work with some amazing former students!</p>
     {%- comment -%}
       Define your desired role order; be sure these strings match
       exactly the `role` values in your CSV!
@@ -69,7 +70,8 @@ title: Lab
     {%- for role in role_order -%}
       {%- assign members = alumni | where: "role", role -%}
       {%- if members and members.size > 0 -%}
-        <h3>{{ role }}</h3>
+		  <details class="alumni-section">
+		    <summary>{{ role }}</summary>
         <ul class="lab-members">
           {%- for member in members -%}
             <li id="{{ member.id }}">
@@ -77,7 +79,7 @@ title: Lab
               <h4>{{ member.name }}</h4>
               <p>{{ member.role }}</p>
     <p>({{ member.year_started }}
-		{% if member.year_ended != '' %} - {{ member.year_ended }}{% endif %})
+		{% if member.year_ended != "" %} - {{ member.year_ended }}{% endif %})
 	</p>
 	{% if member.next != 'x' %}
 		<p><em> {{ member.next }} </em></p>
@@ -85,10 +87,24 @@ title: Lab
             </li>
           {%- endfor -%}
         </ul>
+				  </details>
       {%- endif -%}
     {%- endfor -%}
-  </details>
-  
 
+
+	<h1>Funding</h1>
+		Our research lab is made possible by the generous support of the following organizations.
+
+		<table>
+			<tr>
+		<td><img height=70 src="images/nsf.jpeg"></td>
+		<td><img height=50 src="images/darpa.jpeg"></td>
+		<td><img height=50 src="images/nasa.png"></td>
+		<td><img height=50 src="images/arl.jpeg"></td>
+		<td><img height=50 src="images/cisco.png"></td>
+		<td><img height=50 src="images/google.png"></td>
+		<td><img height=50 src="images/nvidia.png"></td>
+		</tr>
+		</table>
   
 </section>

@@ -12,6 +12,12 @@
   /* Text & Primary */
   --color-primary:    #2e3a59;  /* dark slate – for headings/nav bg */
   --color-text:       #343a40;  /* charcoal – for body text */
+  
+  /* PI name: pale gold – stands out warmly */
+  --color-header-title: #f1f1f1;
+
+  /* Nav links: off-white – classic and very legible */
+  --color-nav-link: #CFD8DC ;
 
   /* Accent */
   --color-accent:     #4a90e2;  /* soft yet vibrant blue – links/buttons */
@@ -78,7 +84,7 @@ header h1 {
 }
 
 header h1 a {
-	color: var(--color-accent);
+	color: var(--color-header-title);
 }
 
 nav {
@@ -99,7 +105,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--color-bg);
+  color: var(--color-nav-link);
   text-decoration: none;
   font-weight: 600;
   padding: var(--spacing-sm) var(--spacing-md);
@@ -126,6 +132,10 @@ h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--color-primary);
   margin-top: 0;
+}
+
+li .highlight {
+	color: var(--color-accent);
 }
 
 /* Cards for news, publications, courses */
@@ -247,7 +257,10 @@ img {
   margin: 0 auto;
 }
 
-
+.date-updated {
+	color: var(--color-muted-text);
+	font-style: italic;
+}
 
 /* Footer */
 footer {
@@ -456,7 +469,7 @@ a:hover {
 .news-item::before {
   content: "";
   position: absolute;
-  left: 2rem;
+  left: 2.3rem;
   top: 0.5rem;
   width: 0.5rem;
   height: 0.5rem;
@@ -471,6 +484,9 @@ a:hover {
   color: var(--color-muted-text);
   text-align: right;
   margin-right: var(--spacing-md);
+  margin-top: 0.75rem;
+  display: block;                /* ensure margin applies */
+  margin-bottom: var(--spacing-sm); /* adjust up for more space */
 }
 
 /* Text column */
@@ -479,6 +495,7 @@ a:hover {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.4;
+  margin-top: var(--spacing-sm);
 }
 
 /* Tighten up the last item */
@@ -499,6 +516,118 @@ a:hover {
     text-align: left;
     margin-bottom: var(--spacing-xs);
   }
+}
+
+/* EDU and Experience Section */
+/* Education & Experience Table Styles */
+.table-container {
+  overflow-x: auto; /* allows horizontal scroll on small screens */
+  margin: var(--spacing-lg) 0;
+}
+
+.edu-exp-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* ensures columns don’t collapse too narrow */
+}
+
+.edu-exp-table thead th {
+  text-align: left;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 2px solid var(--color-muted-text);
+  font-weight: 600;
+}
+
+.edu-exp-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.edu-exp-table tbody tr:hover {
+  background-color: var(--color-bg);
+}
+
+.edu-exp-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+.edu-exp-table .logo-cell {
+  width: 60px;
+}
+
+.edu-exp-table .logo-cell img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Responsive: stack columns vertically on very small screens */
+@media (max-width: 480px) {
+  .edu-exp-table,
+  .edu-exp-table thead,
+  .edu-exp-table tbody,
+  .edu-exp-table th,
+  .edu-exp-table td,
+  .edu-exp-table tr {
+    display: block;
+  }
+  .edu-exp-table thead {
+    display: none;
+  }
+  .edu-exp-table tbody tr {
+    margin-bottom: var(--spacing-lg);
+  }
+  .edu-exp-table td {
+    padding: var(--spacing-sm);
+    text-align: right;
+    position: relative;
+  }
+  .edu-exp-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: var(--spacing-md);
+    font-weight: 600;
+    text-align: left;
+  }
+  .edu-exp-table .logo-cell {
+    text-align: center;
+  }
+}
+
+/***		Contact styling ***/
+/* Contact section at bottom of homepage */
+#contact {
+  margin: var(--spacing-lg) 0;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-muted-text);
+}
+
+#contact h2 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+}
+
+.contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: var(--spacing-sm);
+  font-size: 0.95rem;
+}
+
+.contact-list a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
 }
 
 

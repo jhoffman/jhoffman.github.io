@@ -27,7 +27,8 @@ title: Home
       <a href="https://scholar.google.com/citations?user=mqpjAt4AAAAJ&hl=en" target="_blank">Google Scholar</a> |
       <a href="https://faculty.cc.gatech.edu/~judy/Hoffman_Judy_CV.pdf" target="_blank">CV</a> |
 	  <a href="https://github.com/jhoffman/">Github</a> | 
-	  <a href="https://twitter.com/judyfhoffman">Twitter</a>
+	  <a href="https://twitter.com/judyfhoffman">Twitter</a> |
+	  <a href="/bio/">Bio</a>
     </p>
     <p class="research-statement">
       <strong>Research Statement:</strong> My research aims to enable learning based AI systems that can reliably benefit a diverse set of people and applications, even under resource constraints. I focus on algorithms for data efficient adaptation, reducing computation time, and building benchmarks and tools to better understand and mitigate model errors.
@@ -37,12 +38,37 @@ title: Home
 
 <section id="news">
   <h2>Recent News</h2>
-  {% for item in site.data.news limit:3 %}
-  <article class="news-item">
-    <h3>{{ item.title }}</h3>
-    <p class="date">{{ item.date | date: "%B %d, %Y" }}</p>
-    <p>{{ item.description }}</p>
-  </article>
-  {% endfor %}
+
+  <ul class="news-list">
+    {% for item in site.data.news limit:3 %}
+    <li class="news-item">
+      <time datetime="{{ item.date }}">{{ item.date | date: "%b %Y" }}</time>
+      <p class="news-text">{{ item.news }}</p>
+    </li>
+    {% endfor %}
+  </ul>
   <p><a href="/news.html">More News</a></p>
+	
+	
+  <section id="contact">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>
+        <strong>Email:</strong>
+        <a href="mailto:judy@gatech.edu">judy@gatech.edu</a>
+      </li>
+      <li>
+        <strong>Office:</strong>
+        S1121 Coda Building, Georgia Tech
+      </li>
+      <li>
+        <strong>Twitter:</strong>
+        <a href="https://twitter.com/judyfhoffman" target="_blank">@judyfhoffman</a>
+      </li>
+			<li>
+				<strong>LinkedIn:</strong>
+				<a href="https://www.linkedin.com/in/judy-hoffman-ai/">judy-hoffman-ai</a>
+			</li>
+    </ul>
+  </section>
 </section>

@@ -1,0 +1,90 @@
+{  
+	"cs6476_spring2024": {
+		"image": "images/comp_vision_teaser_by_kirkh.jpg",
+		"role": "Instructor",
+		"url": "https://www.cc.gatech.edu/~judy/cs6476-sp24",
+		"name": "CS 6476-A: Computer Vision",
+		"semester": "Spring 2024",
+		"university": "Georgia Tech"
+    },
+    "cs7647_fall2023": {
+ 		"url": "https://sites.google.com/view/cs7647fa23",
+ 		"image": "figs/cs8803ls-fall2019.png",
+ 		"role": "Instructor",
+ 		"name": "CS 7647: Machine Learning with Limited Supervision",
+ 		"semester": "Fall 2023",
+ 		"university": "Georgia Tech"
+ 	}, 
+	"cs4476_spring2023": {
+		"image": "images/comp_vision_teaser_by_kirkh.jpg",
+		"role": "Instructor",
+		"url": "https://www.cc.gatech.edu/~judy/cs4476-sp23",
+		"name": "CS 4476-A: Introduction to Computer Vision",
+		"semester": "Spring 2023",
+		"university": "Georgia Tech"
+    },
+   "cs8803ls_fall2022": {
+		"url": "https://sites.google.com/view/cs8803ls-fa22",
+		"image": "figs/cs8803ls-fall2019.png",
+		"role": "Instructor",
+		"name": "CS 8803 LS: Machine Learning with Limited Supervision",
+		"semester": "Fall 2022",
+		"university": "Georgia Tech"
+	}, 
+    "cs4476_6476_spring2022": {
+            "image": "images/comp_vision_teaser_by_kirkh.jpg",
+            "role": "Instructor",
+            "url": "https://www.cc.gatech.edu/~judy/cs4476-sp22",
+            "name": "CS 4476-A: Introduction to Computer Vision",
+            "semester": "Spring 2022",
+            "university": "Georgia Tech"
+    },
+	"cs8803ls_fall2021": {
+		"url": "https://sites.google.com/view/cs8803ls-fa2021",
+		"image": "figs/cs8803ls-fall2019.png",
+		"role": "Instructor",
+		"name": "CS 8803 LS: Machine Learning with Limited Supervision",
+		"semester": "Fall 2021",
+		"university": "Georgia Tech"
+	},
+    "cs4476_6476_spring2021": {
+            "image": "images/comp_vision_teaser_by_kirkh.jpg",
+            "role": "Instructor",
+            "url": "https://sites.google.com/view/cs4476-sp21",
+            "name": "CS 4476: Introduction to Computer Vision",
+            "semester": "Spring 2021",
+            "university": "Georgia Tech"
+    },
+	    "cs4476_6476_spring2020": {
+                "url": "https://sites.google.com/view/cs4476-6476-sp2020",
+                "image": "images/comp_vision_teaser_by_kirkh.jpg",
+                "role": "Instructor",
+                "name": "CS 4476/6476: Computer Vision",
+                "semester": "Spring 2020",
+                "university": "Georgia Tech"
+        },
+	"cs8803ls_fall2019": {
+		"url": "https://sites.google.com/view/fall2019-cs8803-ls",
+		"image": "figs/cs8803ls-fall2019.png",
+		"role": "Instructor",
+		"name": "CS 8803 LS: Machine Learning with Limited Supervision",
+		"semester": "Fall 2019",
+		"university": "Georgia Tech"
+	},
+	"cs188_spring2013": {
+		"url": "",
+		"image": "figs/cs188.jpeg",
+		"role": "Teaching Assistant",
+		"name": "CS 188: Introduction to Artificial Intelligence",
+		"semester": "Spring 2013",
+		"university": "UC Berkeley"
+	},
+	"ee20n_fall2009": {
+		"url": "",
+		"image": "figs/ee20n.jpg",
+		"role": "Teaching Assistant",
+		"name": "EE 20N: Signals and System",
+		"semester": "Fall 2009",
+		"university": "UC Berkeley"
+	}
+}
