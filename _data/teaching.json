@@ -1,4 +1,12 @@
-{  
+{
+	"cs4476_fall2025": {
+		"image": "images/comp_vision_teaser_by_kirkh.jpg",
+		"role": "Instructor",
+		"url": "https://jhoffman.github.io/cs4476-fa25/",
+		"name": "CS 6476-A: Computer Vision",
+		"semester": "Fall 2025",
+		"university": "Georgia Tech"
+    },
 	"cs6476_spring2024": {
 		"image": "images/comp_vision_teaser_by_kirkh.jpg",
 		"role": "Instructor",
