@@ -8,10 +8,11 @@ permalink: /news/
   <h2>Recent News</h2>
   <ul class="news-list">
     {% for item in site.data.news %}
-    <li class="news-item">
+		<li class="news-item{% if item.highlight %} news-item--highlight{% endif %}">
       <time datetime="{{ item.date }}">{{ item.date | date: "%b %Y" }}</time>
       <p class="news-text">{{ item.news }}</p>
     </li>
+		
     {% endfor %}
   </ul>
 </section>
