@@ -208,6 +208,15 @@ li .highlight {
   margin-bottom: var(--spacing-sm);
 }
 
+.news-item--highlight {
+  background-color: #fff9c4;      /* pale yellow */
+  border-left: 4px solid #ffeb3b; /* optional accent stripe */
+  padding: 0.5rem 1rem;           /* give it some breathing room */
+  border-radius: 4px;             /* soften the corners */
+  margin-bottom: 0.5rem;          /* space below, if you want */
+}
+
+
 /* Images */
 img {
   max-width: 100%;
