@@ -1,18 +1,22 @@
 {
-    "id": "2025Egomimic",
-    "authors": "Simar Kareer, Dhruv Patel*, Ryan Punamiya*, Pranay Mathur*, Shuo Cheng, Chen Wang, Judy Hoffman*, Danfei Xu*",
-    "title": "EgoMimic | Scaling Imitation Learning through Egocentric Video",
-    "venue": "icra",
-    "year": "2025",
-    "pdf": "https://arxiv.org/abs/2410.24221",
-    "slides": "",
-    "code": "https://github.com/SimarKareer/EgoMimic",
-    "bibtex_type": "inproceedings",
-    "fig": "figs/2024Egomimic.png",
-    "project": "https://egomimic.github.io/",
-	"video": "https://www.youtube.com/watch?v=kgqQZVqJFlA",
-    "is_new": true,
-	"press": {"Meta News": "https://ai.meta.com/blog/egomimic-project-aria-georgia-tech-ego4d-robotics-embodied-ai/", "Computer World": "https://www.computerworld.com/article/3832789/why-fast-learning-robots-are-wearing-meta-glasses.html"},
-	"special": "",
-    "abstract": ""
+  "id": "2025Egomimic",
+  "authors": "Simar Kareer, Dhruv Patel*, Ryan Punamiya*, Pranay Mathur*, Shuo Cheng, Chen Wang, Judy Hoffman*, Danfei Xu*",
+  "title": "EgoMimic | Scaling Imitation Learning through Egocentric Video",
+  "venue": "icra",
+  "year": "2025",
+  "month": 5,
+  "pdf": "https://arxiv.org/abs/2410.24221",
+  "slides": "",
+  "code": "https://github.com/SimarKareer/EgoMimic",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2024Egomimic.png",
+  "project": "https://egomimic.github.io/",
+  "video": "https://www.youtube.com/watch?v=kgqQZVqJFlA",
+  "is_new": true,
+  "press": {
+    "Meta News": "https://ai.meta.com/blog/egomimic-project-aria-georgia-tech-ego4d-robotics-embodied-ai/",
+    "Computer World": "https://www.computerworld.com/article/3832789/why-fast-learning-robots-are-wearing-meta-glasses.html"
+  },
+  "special": "",
+  "abstract": ""
 }

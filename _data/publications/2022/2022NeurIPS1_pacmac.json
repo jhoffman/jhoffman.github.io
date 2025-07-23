@@ -1,19 +1,20 @@
 {
-    "id": "2022NeurIPS_pacmac",
-    "authors": "Viraj Prabhu*, Sriram Yenamandra*, Aaditya Singh, Judy Hoffman",
-    "title": "Adapting Self-Supervised Vision Transformers by Probing Attention-Conditioned Masking Consistency",
-    "venue": "neurips",
-    "year": "2022",
-    "pdf": "https://arxiv.org/abs/2206.08222",
-    "slides": "",
-    "code": "https://github.com/virajprabhu/PACMAC",
-    "bibtex_type": "inproceedings",
-    "fig": "figs/2022_pacmac.png",
-    "project": "",
-    "is_new": false,
-	"special": "",
-	"press": {
-		"GT CoC": "https://www.cc.gatech.edu/news/new-system-image-object-recognition-modernizes-how-computers-learn-independently-and-transfer"
-	},
-    "abstract": ""
+  "id": "2022NeurIPS_pacmac",
+  "authors": "Viraj Prabhu*, Sriram Yenamandra*, Aaditya Singh, Judy Hoffman",
+  "title": "Adapting Self-Supervised Vision Transformers by Probing Attention-Conditioned Masking Consistency",
+  "venue": "neurips",
+  "year": "2022",
+  "pdf": "https://arxiv.org/abs/2206.08222",
+  "slides": "",
+  "code": "https://github.com/virajprabhu/PACMAC",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2022_pacmac.png",
+  "project": "",
+  "is_new": false,
+  "special": "",
+  "press": {
+    "GT CoC": "https://www.cc.gatech.edu/news/new-system-image-object-recognition-modernizes-how-computers-learn-independently-and-transfer"
+  },
+  "abstract": "",
+  "month": 12
 }

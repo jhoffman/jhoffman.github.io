@@ -1,17 +1,21 @@
 {
-    "id": "2012eccvwHartmann",
-    "authors": "Glen Hartmann, Matthias Grundmann, Judy Hoffman, David Tsai, Vivek Kwatra, Omid Madani, Sudheendra Vijayanarasimhan, Irfan Essa, James Rehg, Rahul Sukthankar",
-    "title": "Weakly Supervised Learning of Object Segmentations from Web-Scale Video",
-    "venue": "eccvw-webscale",
-    "year": "2012",
-    "pdf": "http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/40735.pdf",
-    "slides": "",
-    "code": "",
-    "bibtex_type": "inproceedings",
-    "fig": ["figs/2012eccvwHartmannA.png", "figs/2012eccvwHartmannB.png"],
-    "project": "",
-    "is_new": false,
-	"special": "Best Paper Award",
-	"video": "",
-    "abstract": "We present an algorithm that learns representations which explicitly compensate for domain mismatch and which can be efficiently realized as linear classifiers. Specifically, we form a linear transformation that maps features from the target (test) domain to the source (training) domain as part of training the classifier. We optimize both the transformation and classifier parameters jointly, and introduce an efficient cost function based on misclassification loss. Our method combines several features previously unavailable in a single algorithm: multi-class adaptation through representation learning, ability to map across heterogeneous feature spaces, and scalability to large datasets. We present experiments on several image datasets that demonstrate improved accuracy and computational advantages compared to previous approaches."
+  "id": "2012eccvwHartmann",
+  "authors": "Glen Hartmann, Matthias Grundmann, Judy Hoffman, David Tsai, Vivek Kwatra, Omid Madani, Sudheendra Vijayanarasimhan, Irfan Essa, James Rehg, Rahul Sukthankar",
+  "title": "Weakly Supervised Learning of Object Segmentations from Web-Scale Video",
+  "venue": "eccvw-webscale",
+  "year": "2012",
+  "pdf": "http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en/us/pubs/archive/40735.pdf",
+  "slides": "",
+  "code": "",
+  "bibtex_type": "inproceedings",
+  "figs": [
+    "figs/2012eccvwHartmannA.png",
+    "figs/2012eccvwHartmannB.png"
+  ],
+  "project": "",
+  "is_new": false,
+  "special": "Best Paper Award",
+  "video": "",
+  "abstract": "We present an algorithm that learns representations which explicitly compensate for domain mismatch and which can be efficiently realized as linear classifiers. Specifically, we form a linear transformation that maps features from the target (test) domain to the source (training) domain as part of training the classifier. We optimize both the transformation and classifier parameters jointly, and introduce an efficient cost function based on misclassification loss. Our method combines several features previously unavailable in a single algorithm: multi-class adaptation through representation learning, ability to map across heterogeneous feature spaces, and scalability to large datasets. We present experiments on several image datasets that demonstrate improved accuracy and computational advantages compared to previous approaches.",
+  "month": 10
 }

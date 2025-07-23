@@ -1,17 +1,21 @@
 {
-    "id": "2013iclrHoffman",
-    "authors": "Judy Hoffman,  Erik Rodner,  Jeff Donahue,  Kate Saenko,  Trevor Darrell",
-    "title": "Efficient Learning of Domain-invariant Image Representations",
-    "venue": "iclr",
-    "year": "2013",
-    "pdf": "https://arxiv.org/abs/1301.3224",
-    "slides": "talks/Hoffman_ICLR2013.pdf",
-    "code": "code/Hoffman_ICLR13_MMDT_v4.zip",
-    "bibtex_type": "inproceedings",
-    "fig": ["figs/2013iclrHoffmanA.png", "figs/2013iclrHoffmanB.png"],
-    "project": "",
-    "is_new": false,
-	"special": "Oral Presentation",
-	"video": "",
-    "abstract": "We present an algorithm that learns representations which explicitly compensate for domain mismatch and which can be efficiently realized as linear classifiers. Specifically, we form a linear transformation that maps features from the target (test) domain to the source (training) domain as part of training the classifier. We optimize both the transformation and classifier parameters jointly, and introduce an efficient cost function based on misclassification loss. Our method combines several features previously unavailable in a single algorithm: multi-class adaptation through representation learning, ability to map across heterogeneous feature spaces, and scalability to large datasets. We present experiments on several image datasets that demonstrate improved accuracy and computational advantages compared to previous approaches."
+  "id": "2013iclrHoffman",
+  "authors": "Judy Hoffman,  Erik Rodner,  Jeff Donahue,  Kate Saenko,  Trevor Darrell",
+  "title": "Efficient Learning of Domain-invariant Image Representations",
+  "venue": "iclr",
+  "year": "2013",
+  "pdf": "https://arxiv.org/abs/1301.3224",
+  "slides": "talks/Hoffman_ICLR2013.pdf",
+  "code": "code/Hoffman_ICLR13_MMDT_v4.zip",
+  "bibtex_type": "inproceedings",
+  "figs": [
+    "figs/2013iclrHoffmanA.png",
+    "figs/2013iclrHoffmanB.png"
+  ],
+  "project": "",
+  "is_new": false,
+  "special": "Oral Presentation",
+  "video": "",
+  "abstract": "We present an algorithm that learns representations which explicitly compensate for domain mismatch and which can be efficiently realized as linear classifiers. Specifically, we form a linear transformation that maps features from the target (test) domain to the source (training) domain as part of training the classifier. We optimize both the transformation and classifier parameters jointly, and introduce an efficient cost function based on misclassification loss. Our method combines several features previously unavailable in a single algorithm: multi-class adaptation through representation learning, ability to map across heterogeneous feature spaces, and scalability to large datasets. We present experiments on several image datasets that demonstrate improved accuracy and computational advantages compared to previous approaches.",
+  "month": 5
 }

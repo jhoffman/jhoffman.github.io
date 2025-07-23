@@ -29,5 +29,18 @@
   <footer>
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
+
+
+
+<script>
+  function toggleBibtex(button) {
+    const bib = button.parentElement.querySelector('.bibtex-block');
+    if (bib) {
+      bib.style.display = (bib.style.display === 'none' || !bib.style.display) ? 'block' : 'none';
+    }
+  }
+</script>
 </body>
+
+
 </html>

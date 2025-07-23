@@ -29,17 +29,38 @@ permalink: /publications/
 	  {% assign year = raw_year | append: "" %}
       <h3>{{ year }}</h3>
 
-    {% assign pubs = site.data.publications[year] %}
+    {% assign pubs_dict = site.data.publications[year] %}
 
+		<!-- Turn dictionary into a list -->
+		{% assign pubs = "" | split: "" %}
+	  {% for pub_id in pubs_dict %}
+	    {% assign pub = pub_id[1] %}
+	    {% if pub %}
+	      {% assign pubs = pubs | push: pub %}
+	    {% endif %}
+	  {% endfor %}
+		
+		<!-- Reverse chronological order by month -->
+		{% assign pubs_sorted = pubs | sort: "month" | reverse %}
+		
+		
     <ul class="publication-list">
-      {% for pub_item in pubs %}
-	  	{% assign pub = pub_item[1] %}
+      {% for pub in pubs_sorted %}
+				{% assign venue_name = site.data.venues[pub.venue] %}
+				{% assign lastname = pub.authors | split: "," | first | strip | split: " " | last %}
 	
         <li class="publication-summary">
 
           {% if pub.fig and pub.fig != "" %}
             <img src="{{ pub.fig | relative_url }}" alt="{{ pub.title }} preview" class="pub-thumb">
-          {% endif %}
+					{% endif %}
+						
+					{% if pub.figs and pub.figs != "" %}
+							{% for img in pub.figs %}
+								<img src="{{ img | relative_url }}" alt="{{ pub.title }} preview" class="pub-thumb">
+							{% endfor %}
+					{% endif %}
+					
 
 		  <div class="pub-content">
           <h4>			
@@ -49,7 +70,7 @@ permalink: /publications/
 			  {{ pub.title }}             
 		 </h4>
           <p class="meta">
-            {{ pub.authors }}. <em>{{ site.data.venues[pub.venue] }}</em>, {{ pub.year }}.
+            {{ pub.authors }}. <em>{{ venue_name }}</em>, {{ pub.year }}.
           </p>
 		  
           {% if pub.special and pub.special != "" %}
@@ -57,13 +78,29 @@ permalink: /publications/
           {% endif %}
 		  
 
-          <p class="links">
+          <div class="links">
             {% if pub.pdf and pub.pdf != "" %}<a href="{{ pub.pdf }}"    target="_blank">PDF</a>{% endif %}
             {% if pub.slides and pub.slides != "" %} <a href="{{ pub.slides }}" target="_blank">Slides</a>{% endif %}
             {% if pub.code and pub.code != "" %} <a href="{{ pub.code }}"  target="_blank">Code</a>{% endif %}
             {% if pub.project and pub.project != "" %} <a href="{{ pub.project }}"target="_blank">Project</a>{% endif %}
             {% if pub.video and pub.video != "" %} <a href="{{ pub.video }}" target="_blank">Video</a>{% endif %}
-          </p>
+						
+						
+						 <button class="button toggle-bibtex" onclick="toggleBibtex(this)">BibTeX</button>
+
+				<pre class="bibtex-block" style="display: none;">
+				@inproceedings{ {{ pub.year }}_{{pub.venue}}_{{lastname}} },
+				  title={ {{ pub.title }} },
+				  author={ {{ pub.authors | replace: ",", " and" }} },
+				  booktitle={ {{ venue_name }} },
+				  year={ {{ pub.year }} }
+				}
+				</pre>
+
+					 </div>
+						
+						
+         
 
           {% if pub.press and pub.press != "" %}
             <p class="press">
@@ -82,3 +119,4 @@ permalink: /publications/
     </ul>
   {% endfor %}
 </section>
+	

@@ -163,4 +163,32 @@
   margin: 0;
 }
 
+.button {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.3em 0.75em;
+  margin-right: 0.5em;
+  border: none;
+  border-radius: var(--radius);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  background-color: var(--color-accent-alt);
+}
+
+.bibtex-block {
+  background: #f9f9f9;
+  border-left: 3px solid var(--color-accent);
+  padding: 0.75em;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  margin-top: var(--spacing-sm);
+  border-radius: var(--radius);
+	text-align: left;
+}
+
 
