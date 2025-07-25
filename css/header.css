@@ -89,8 +89,22 @@ nav ul li a.active {
 
 
 /* HIDE NAV TOGGLE */
+/* Nav toggle button */
 .nav-toggle {
-	display: none;
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-header-title);
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Default nav (desktop) */
+.navbar {
+  display: flex;
 }
 
 
@@ -111,6 +125,13 @@ nav ul li a.active {
 	  background-color: var(--color-header-background);
 	  position: relative;
 	  z-index: 1000;
+	}
+	
+	.header-title {
+	  flex: 1 1 auto;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-overflow: ellipsis;
 	}
 	
   .navbar {
