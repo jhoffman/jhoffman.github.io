@@ -1,0 +1,19 @@
+{
+  "id": "2025ContrastiveFlow",
+  "authors": "George Stoica, Vivek Ramanujan*, Xiang Fan*, Ranjay Krishna and Judy Hoffman",
+  "title": "Contrastive Flow Matching",
+  "venue": "iccv",
+  "year": "2025",
+  "month": 10,
+  "pdf": "https://arxiv.org/abs/2506.05350",
+  "slides": "",
+  "code": "",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2025iccv_contrastiveflow.png",
+  "project": "",
+  "video": "",
+  "is_new": true,
+  "press": "",
+  "special": "",
+  "abstract": ""
+}

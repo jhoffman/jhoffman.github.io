@@ -5,13 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home - Judy Hoffman</title>
   <link rel="stylesheet" href="/css/style.css">
+	  <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/pub_style.css">
 </head>
 <body>
   <header>
-    <h1><a href="/">Judy Hoffman</a></h1>
-    <nav>
-      <ul>
+		<div class="header-bar">
+			<div class="header-title">
+				<h1><a href="/">Judy Hoffman</a></h1>
+			</div>
+			<button class="nav-toggle" onclick="toggleNav()">☰</button>
+    <nav class="navbar" id="navbar">
+      <ul class="nav-list">
         <li><a href="/" class="active">Home</a></li>
         <li><a href="/lab/" >Lab</a></li>
         <li><a href="/publications/" >Publications</a></li>
@@ -20,6 +25,7 @@
 				<li><a href="/about/" >About</a></li>
       </ul>
     </nav>
+	</div>
   </header>
 
   <main>
@@ -117,6 +123,10 @@
     if (bib) {
       bib.style.display = (bib.style.display === 'none' || !bib.style.display) ? 'block' : 'none';
     }
+  }
+	
+  function toggleNav() {
+    document.querySelector('.navbar').classList.toggle('open');
   }
 </script>
 </body>

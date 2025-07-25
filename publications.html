@@ -88,14 +88,14 @@ permalink: /publications/
 						
 						 <button class="button toggle-bibtex" onclick="toggleBibtex(this)">BibTeX</button>
 
-				<pre class="bibtex-block" style="display: none;">
-				@inproceedings{ {{ pub.year }}_{{pub.venue}}_{{lastname}} },
-				  title={ {{ pub.title }} },
-				  author={ {{ pub.authors | replace: ",", " and" }} },
-				  booktitle={ {{ venue_name }} },
-				  year={ {{ pub.year }} }
-				}
-				</pre>
+					<pre class="bibtex-block" style="display: none;">
+					@inproceedings{ {{ pub.year }}_{{pub.venue}}_{{lastname}} },
+					  title={ {{ pub.title }} },
+					  author={ {{ pub.authors | replace: ",", " and" }} },
+					  booktitle={ {{ venue_name }} },
+					  year={ {{ pub.year }} }
+					}
+					</pre>
 
 					 </div>
 						
