@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ page.title }} - {{ site.title }}</title>
+	{% if page.title  == "Home" %}
+		<title> {{ site.title }} | Associate Professor - Georgia Tech </title>
+	{% else %}
+		<title>{{ page.title }} - {{ site.title }}</title>
+	{% endif %}
+	
   <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">
 	  <link rel="stylesheet" href="{{ '/css/header.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/css/pub_style.css' | relative_url }}">

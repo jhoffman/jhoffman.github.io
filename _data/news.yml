@@ -59,8 +59,11 @@
   news: "I am honored to serve as a Program Committee Chair for CVPR 2023"
 
 - date: 2021-11-01
-  news: "Honored to have been selected as a <a href='https://news.samsung.com/global/samsung-ai-forum-2021-day-1-ai-research-for-tomorrow'>Samsung AI Researcher of the Year</a>, 2021! <!--Oct 2021: Upcoming talks at GT IRIM, UIUC Vision Seminar, and CMU Vision seminar."
+  news: "Honored to have been selected as a <a href='https://news.samsung.com/global/samsung-ai-forum-2021-day-1-ai-research-for-tomorrow'>Samsung AI Researcher of the Year</a>, 2021!"
   highlight: true
+
+- date: 2021-10-30
+  news: "Upcoming talks at GT IRIM, UIUC Vision Seminar, and CMU Vision seminar."
 
 - date: 2021-10-21
   news: "Upcoming Talk at ICCV 2021 <a href='https://sites.google.com/view/deepmtlworkshop/home''>Deep Multitask Learning Workshop</a>"
@@ -70,8 +73,3 @@
 
 - date: 2021-11-01
   news: "Congratulations to lead authors Viraj and Prithvi on accepted ICCV 2021 papers! "
-
-#[10/21] I am co-organizing the <a href="">Workshop on Adversarial Robustness in the Real World</a> at ICCV 2021. 
-#[10/21] Daniel and I are co-organizers on the LVIS Challenge at ICCV 2021, integrating TIDE into the evaluation
-#[6/21] Talks at CVPR 2021: <a href="https://eval.vision.rwth-aachen.de/rvsu-workshop21/">Robust Video Understanding</a> Workshop, Tutorial on <a href="https://advmlincv.github.io/cvpr21-tutorial/">Adversarial Machine Learning in Computer Vision</a>, and a Fireside chat with <a href="https://www.katecrawford.net/">Kate Crawford</a> at the Responsible Computer Vision Workshop! 
-#June 2023: Moderating <a href="https://cvpr2023.thecvf.com/virtual/2023/panel/23305">Keynote Panel on Vision, Language, and Creativity, at CVPR</a>-->
