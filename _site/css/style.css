@@ -252,7 +252,15 @@ a:hover {
 		flex-wrap: wrap;
 		justify-content: center;
     gap: var(--spacing-md);
+		list-style: none;
   }
+	
+	.lab-members li {
+		flex: 1 1 calc(50% - var(--spacing-md)); /* allow wrapping, 50% minus gap */
+		box-sizing: border-box;
+		max-width: calc(50% - var(--spacing-md));
+	}
+	
 }
 
 /* -------------------------------
@@ -389,8 +397,9 @@ a:hover {
   }
 	
   .alumni-section .lab-members li {
-    flex: 1 1 100%;
-    /*max-width: 100%;*/
+		flex: 1 1 calc(50% - var(--spacing-md)); /* allow wrapping, 50% minus gap */
+		box-sizing: border-box;
+		max-width: calc(50% - var(--spacing-md));
   }
 }
 

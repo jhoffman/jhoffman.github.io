@@ -1,14 +1,8 @@
 :root {
-	
-	--color-header-background: var(--color-primary);
-
-	--color-header-title: #f1f1f1;
-
-	/* Nav links */
-	--color-nav-link: #CFD8DC;
+  --color-header-background: var(--color-primary);
+  --color-header-title: #f1f1f1;
+  --color-nav-link: #CFD8DC;
 }
-
-
 
 header {
     position: sticky;
@@ -25,8 +19,6 @@ header {
   text-align: center; /* fallback for older browsers */
 }
 
-
-
 .header-bar {
   display: flex;
   justify-content: center;
@@ -38,6 +30,17 @@ header {
 }
 
 
+/* Site title */
+.header-title {
+  flex: 1;
+  text-align: left;
+}
+
+.header-title h1 a {
+  color: var(--color-header-title);
+  text-decoration: none;
+}
+
 header h1 {
   margin: 0;
   font-family: var(--font-heading);
@@ -48,14 +51,30 @@ header h1 {
   margin-bottom: var(--spacing-sm);
 }
 
-
-
 header h1 a {
 	color: var(--color-header-title);
 }
 
 nav {
   margin-top: var(--spacing-sm);
+}
+
+/* Nav toggle button */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-header-title);
+  cursor: pointer;
+  padding: var(--spacing-sm);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+/* Default nav (desktop) */
+.navbar {
+  display: flex;
 }
 
 nav ul {
@@ -81,38 +100,21 @@ nav ul li a {
   transition: background-color 0.2s;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-  background-color: rgba(236, 240, 241, 0.2); /* subtle highlight */
+
+.navbar li a:hover,
+.navbar li a.active {
+  background-color: rgba(236, 240, 241, 0.2);
 }
-
-
-
-/* HIDE NAV TOGGLE */
-/* Nav toggle button */
-.nav-toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  color: var(--color-header-title);
-  cursor: pointer;
-  padding: var(--spacing-sm);
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
-/* Default nav (desktop) */
-.navbar {
-  display: flex;
-}
-
 
 /* Hide nav on mobile unless toggled */
 @media (max-width: 768px) {
 
 	header h1 {
-	  font-size: 1.5rem;
+	  font-size: 1.3rem;
+	}
+	
+	nav {
+		margin-top: 0;
 	}
 	
 	.header-bar {
