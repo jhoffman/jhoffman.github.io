@@ -1,7 +1,7 @@
 name,role,URL,image,co_advisor,year_started,year_ended,next
 Fiona Ryan,PhD,https://fkryan.github.io/,images/FionaRyan.jpg,Jim Rehg,2020,2025,current
-George Stoica,PhD,https://gstoica27.github.io/,images/george.jpeg,,2021,2026,current
-Simar Kareer,PhD,https://www.simarkareer.com,images/SimarKareer.png,,2022,2027,current
+George Stoica,PhD,https://gstoica27.github.io/,images/george.jpeg,Ranjay Krishna,2021,2026,current
+Simar Kareer,PhD,https://www.simarkareer.com,images/SimarKareer.png,Danfei Xu,2022,2027,current
 Pratik Ramesh,PhD,https://pratikramesh1.github.io/,images/PratikRamesh.jpeg,,2023,2028,current
 Sahil Khose,PhD,https://sahilkhose.github.io/,images/sahilkhose.jpg,,2024,2029,current
 Mengqi Zhang,PhD,https://mq-zhang1.github.io/,images/menqizhang.jpg,,2024,2029,current

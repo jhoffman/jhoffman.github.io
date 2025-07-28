@@ -18,6 +18,9 @@ permalink: /lab/
       <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
       <h3><a href="{{ member.URL }}">{{ member.name }}</a></h3>
       <p>{{ member.role }}</p>
+			{% if member.co_advisor %}
+				<p><em>Co-advised by: {{member.co_advisor}}</em>
+			{% endif %}
       <p>({{ member.year_started }} - )</p>
     </li>
     {% endfor %}
