@@ -1,5 +1,8 @@
 # _data/news.yml
 
+- date: 2025-06-11
+  news: "Congratulations to the EgoMimic team on taking <a href="https://www.cc.gatech.edu/news/georgia-tech-team-takes-second-place-icra-robot-teleoperation-contest">second place</a> at the ICRA Robot Teleoperation Contest"
+
 - date: 2025-06-06
   news: "I am giving two invited talks at the <a href='https://uncertainty-cv.github.io/2025'>Uncertainty Workshop</a> and the <a href='https://sites.google.com/view/nexd25/home'>Next Generation of Data Workshop</a>. Congratulations to Fiona on presenting two papers at CVPR: <a href='https://arxiv.org/abs/2412.09586'>Gazelle</a> for gaze recognition and <a href='https://arxiv.org/abs/2506.10182'>Polar</a> for improving personalized search!"
 
