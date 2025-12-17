@@ -1,9 +1,15 @@
 [
+	{
+		"logo": "/images/uci_seal.png",
+		"title": "Associate Professor",
+		"organization": "University of California, Irvine",
+		"years": "2026-"
+	},
   {
     "logo": "/images/gt_seal.png",
     "title": "Associate Professor",
     "organization": "Georgia Institute of Technology",
-    "years": "2025-"
+    "years": "2025"
   },
   {
     "logo": "/images/gt_seal.png",
