@@ -41,7 +41,33 @@
     <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
   </footer>
 
-
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Judy Hoffman",
+  "url": "http://judyhoffman.io/",
+  "image": "http://judyhoffman.io/images/Judy_Hoffman.png",
+  "jobTitle": "Associate Professor",
+  "worksFor": {
+    "@type": "CollegeOrUniversity",
+    "name": "University of California, Irvine"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "UC Berkeley"
+    }
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=mqpjAt4AAAAJ&hl=en",
+    "https://www.linkedin.com/in/judy-hoffman-ai/",
+    "https://x.com/judyfhoffman",
+    "https://github.com/jhoffman"
+  ],
+  "description": "Judy Hoffman is an Associate Professor of Computer Science in the Donald Bren School of Information and Computer Sciences focusing on computer vision and machine learning."
+}
+</script>
 
 <script>
   function toggleBibtex(button) {
