@@ -2,5 +2,8 @@ title: "Judy Hoffman"
 
 permalink: pretty
 
+url: "https://jhoffman.github.io" # Ensure no trailing slash here
+baseurl: ""                      # Usually empty for user pages
+
 plugins:
   - jekyll-sitemap
