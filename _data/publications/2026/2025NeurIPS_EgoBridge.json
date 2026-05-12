@@ -1,0 +1,19 @@
+{
+  "id": "2026EgoVerse",
+  "authors": "Ryan Punamiya, Simar Kareer, Zeyi Liu, Josh Citron, Ri-Zhao Qiu, Xiongyi Cai, Alexey Gavryushin, Jiaqi Chen, Davide Liconti, Lawrence Y. Zhu, Patcharapong Aphiwetsa, Baoyu Li, Aniketh Cheluva, Pranav Kuppili, Yangcen Liu, Dhruv Patel, Aidan Gao, Hye-Young Chung, Ryan Co, Renee Zbizika, Jeff Liu, Xiaomeng Xu, Haoyu Xiong, Geng Chen, Sebastiano Oliani, Chenyu Yang, Xi Wang, James Fort, Richard Newcombe, Josh Gao, Jason Chong, Garrett Matsuda, Aseem Doriwala, Marc Pollefeys, Robert Katzschmann, Xiaolong Wang, Shuran Song, Judy Hoffman, Danfei Xu",
+  "title": "EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the World",
+  "venue": "rss",
+  "year": "2026",
+  "month": 7,
+  "pdf": "https://arxiv.org/abs/2604.07607",
+  "slides": "",
+  "code": "",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2026_RSS_Egoverse.gif",
+  "project": "https://egoverse.ai/",
+  "video": "",
+  "is_new": true,
+  "press":,
+  "special": "",
+  "abstract": ""
+}
