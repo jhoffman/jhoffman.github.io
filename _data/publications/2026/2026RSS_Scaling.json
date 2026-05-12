@@ -1,0 +1,19 @@
+{
+  "id": "2026Egoscaling",
+  "authors": "Simar Kareer, Karl Pertsch, James Darpinian, Judy Hoffman, Danfei Xu, Sergey Levine, Chelsea Finn, Suraj Nair",
+  "title": "Emergence of Human to Robot Transfer in Vision-Language-Action Models",
+  "venue": "rss",
+  "year": "2026",
+  "month": 7,
+  "pdf": "https://arxiv.org/abs/2512.22414",
+  "slides": "",
+  "code": "",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2026_RSS_Egoscale.png",
+  "project": "https://www.pi.website/research/human_to_robot",
+  "video": "",
+  "is_new": true,
+  "press":,
+  "special": "",
+  "abstract": ""
+}
