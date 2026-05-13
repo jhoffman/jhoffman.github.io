@@ -1,0 +1,19 @@
+{
+  "id": "2026Posterior",
+  "authors": "George Stoica, Sayak Paul, Matthew Wallingford, Vivek Ramanujan, Abhay Nori, Winson Han, Ali Farhadi, Ranjay Krishna, Judy Hoffman",
+  "title": "Posterior Augmented Flow Matching",
+  "venue": "arXiv",
+  "year": "2026",
+  "month": 5,
+  "pdf": "https://arxiv.org/abs/2605.00825",
+  "slides": "",
+  "code": "https://github.com/gstoica27/PAFM.git",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2026_Posterior.png",
+  "project": "",
+  "video": "",
+  "is_new": true,
+  "press":,
+  "special": "",
+  "abstract": ""
+}
