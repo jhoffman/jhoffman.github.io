@@ -1,4 +1,7 @@
 # _data/news.yml
+- date: 2026-05-07
+  news: "Congratulations to Dr Fiona Ryan for graduating with her PhD!"
+
 - date: 2026-01-01
   news: "I've moved to <a href='https://ics.uci.edu/'>UC Irvine</a>!"
   highlight: true
