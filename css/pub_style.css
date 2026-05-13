@@ -153,14 +153,23 @@
 .publication-summary .pub-thumb {
   grid-area: thumb;
   grid-column: 1 / 2;
-  width: 100%;        /* fill entire first column */
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--radius);
-  justify-self: stretch;/* ensure it won’t shrink */
-  display: block;       /* remove any inline spacing */
-  padding: 0;
-  margin: 0;
+	
+	/* 1. Remove the forced 100% width */
+	  width: auto; 
+	  height: auto;
+
+	  /* 2. Set constraints */
+	  max-width: 100%;       /* Never wider than the column */
+	  max-height: 150px;     /* Adjust this value! This keeps squares/portraits from getting huge */
+  
+	  /* 3. Vertical Centering */
+	  align-self: center;    /* Centers the item vertically within the grid row */
+	  justify-self: center;  /* Centers the item horizontally if it's narrower than the column */
+
+	  /* 4. Aesthetics */
+	  object-fit: contain;   /* Changed from 'cover' so you don't lose the edges of the image */
+	  border-radius: var(--radius);
+	  display: block;      /* remove any inline spacing */
 }
 
 .button {
