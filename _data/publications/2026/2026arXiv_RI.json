@@ -1,0 +1,19 @@
+{
+  "id": "2026RI",
+  "authors": "Simar Kareer, Karl Pertsch, James Darpinian, Judy Hoffman, Danfei Xu, Sergey Levine, Chelsea Finn, Suraj Nair",
+  "title": "Resolving Interference (RI): Disentangling Models for Improved Model Merging",
+  "venue": "arXiv",
+  "year": "2026",
+  "month": 3,
+  "pdf": "https://arxiv.org/abs/2603.13467v1",
+  "slides": "",
+  "code": "https://github.com/pramesh39/resolving_interference",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2026_RI.png",
+  "project": "",
+  "video": "",
+  "is_new": true,
+  "press":,
+  "special": "",
+  "abstract": ""
+}
