@@ -1,0 +1,19 @@
+{
+  "id": "2026CVPR3d",
+  "authors": "Fiona Ryan, Ishwarya Ananthabhotla, Yijun Qian, Judy Hoffman, James M. Rehg, Vamsi Krishna Ithapu, Calvin Murdock",
+  "title": "Forecasting 3D Scanpaths in Egocentric Video",
+  "venue": "cvpr",
+  "year": "2026",
+  "month": 6,
+  "pdf": "",
+  "slides": "",
+  "code": "",
+  "bibtex_type": "inproceedings",
+  "fig": "figs/2026cvpr_3dscan.gif",
+  "project": "",
+  "video": "",
+  "is_new": true,
+  "press":,
+  "special": "",
+  "abstract": ""
+}
