@@ -85,7 +85,7 @@ permalink: /lab/
           {%- for member in members -%}
             <li id="{{ member.id }}">
               <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
-              <h4>{{ member.name }}</h4>
+              <h4><a href="{{ member.URL }}">{{ member.name }}</a></h4>
               <p>{{ member.role }}</p>
     <p>({{ member.year_started }}
 		{% if member.year_ended != "" %} - {{ member.year_ended }}{% endif %})
