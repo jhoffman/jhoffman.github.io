@@ -47,6 +47,8 @@ permalink: /publications/
     <ul class="publication-list">
       {% for pub in pubs_sorted %}
 				{% assign venue_name = site.data.venues[pub.venue] %}
+				{%- comment -%} Fall back to the raw venue when it isn't a key in venues.yml {%- endcomment -%}
+				{% if venue_name == nil or venue_name == "" %}{% assign venue_name = pub.venue %}{% endif %}
 				{% assign lastname = pub.authors | split: "," | first | strip | split: " " | last %}
 	
         <li class="publication-summary">
