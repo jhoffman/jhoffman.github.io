@@ -134,15 +134,7 @@
 
 
 
-/* Publication images */
-.publication-item img,
-.publication-summary img {
-  float: left;
-  margin-right: 1rem;
-}
-
-/* Ensure images in publications are responsive */
-.publication-item img,
+/* Thumbnails are positioned by the grid, so they must not float */
 .publication-summary img {
   float: none;
   display: block;
@@ -198,7 +190,7 @@
   white-space: pre-wrap;
   margin-top: var(--spacing-sm);
   border-radius: var(--radius);
-	text-align: left; !important
+  text-align: left;
 }
 
 

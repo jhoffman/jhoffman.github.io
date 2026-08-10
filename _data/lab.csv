@@ -1,5 +1,4 @@
 name,role,URL,image,co_advisor,year_started,year_ended,next
-Fiona Ryan,PhD,https://fkryan.github.io/,images/FionaRyan.jpg,Jim Rehg,2020,2025,current
 George Stoica,PhD,https://gstoica27.github.io/,images/george.jpeg,Ranjay Krishna,2021,2026,current
 Simar Kareer,PhD,https://www.simarkareer.com,images/SimarKareer.png,Danfei Xu,2022,2027,current
 Pratik Ramesh,PhD,https://pratikramesh1.github.io/,images/PratikRamesh.jpeg,,2023,2028,current
@@ -10,7 +9,8 @@ Junrong Chen,PhD,https://junrongchen2004.github.io/,images/junrongChen.jpg,,2026
 Ryan Punamiya,BS,https://rpunamiya.dev/,images/RyanPunamiya.jpg,Danfei Xu,2024,2025,Next NVIDIA Research / Stanford PhD
 Bogi Ecsedi,BS,https://www.linkedin.com/in/boglarka-ecsedi/,images/BogiEcsedi.jpeg,,2023,2025,Next PhD Utoronto
 Ajay Bati,BS,,images/AjayBati.jpg,,2023,2024,x
-Vincent Cartillier,PostDoc,https://vincentcartillier.github.io/,images/vincentcartillier.jpeg,Irfan Essa,2024,2024,Next Google
+Vincent Cartillier,Postdoc,https://vincentcartillier.github.io/,images/vincentcartillier.jpeg,Irfan Essa,2024,2024,Next Google
+Fiona Ryan,PhD,https://fkryan.github.io/,images/FionaRyan.jpg,Jim Rehg,2020,2026,Next UC Berkeley Postdoc
 Prithvijit Chattopadhyay,PhD,https://prithv1.github.io/,images/prithvi.png,,2019,2024,Next NVIDIA
 Daniel Bolya,PhD,https://dbolya.github.io/,images/daniel.jpeg,,2019,2024,Next Meta
 Anisha Pal,MS,https://anipal.github.io/,images/AnishaPal.jpg,,2023,2024,Next PhD Georgia Tech
