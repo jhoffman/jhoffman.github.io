@@ -7,33 +7,43 @@ title: Home
   <div class="pi-photo-container">
     <img src="{{ 'images/Judy_Hoffman.png' | relative_url }}" alt="Judy Hoffman - UC Irvine" class="pi-photo">
   </div>
-  <div class="pi-details">
-    <h2>Dr. Judy Hoffman</h2>
-    <p class="bio">
-			Associate Professor of Computer Science in the <a href="https://ics.uci.edu/">Donald Bren School of Information and Computer Sciences</a> at the <a href="https://uci.edu/">University of California, Irvine</a>. 
-I am also an Adjunct Associate Professor at the <a href="https://ic.gatech.edu/">School of Interactive Computing</a> at <a href="https://www.gatech.edu/">Georgia Tech</a>.
-	 Research interests include building robust, reliable, and efficient machine learning systems, with special focus on visual input modalities. 
-	 </p>
 
-	 <p>
-	     Prior to joining UCI, Dr. Hoffman was an Associate Professor at Georgia Tech, a Visiting Research Scientist at 
-	     <a href="https://research.fb.com/category/facebook-ai-research/">Facebook AI Research</a>
-	     and a postdoctoral scholar at <a href="https://cs.stanford.edu/">Stanford University</a> and UC Berkeley. 
-	     She received her PhD from <a href="https://bair.berkeley.edu/">UC Berkeley, EECS</a> in 2016 where she was a member of 
-	     <a href="https://bair.berkeley.edu/">BAIR</a> and <a href="https://deepdrive.berkeley.edu/">BDD</a> and advised by <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>. 
-	 </p>
+  <div class="pi-details">
+    <h2 class="pi-name">Dr. Judy Hoffman</h2>
+
+    <p class="pi-title">
+      Associate Professor of Computer Science in the
+      <a href="https://ics.uci.edu/">Donald Bren School of Information and Computer Sciences</a>
+      and the co-Director of the <a href="https://cml.ics.uci.edu/">Center for Machine Learning</a> at the <a href="https://uci.edu/">University of California, Irvine</a>
     </p>
+
+    <p class="pi-focus">
+      Research interests include building robust, reliable, and efficient machine learning systems, with special focus on visual input modalities.
+    </p>
+
     <p class="links">
       <a href="https://scholar.google.com/citations?user=mqpjAt4AAAAJ&hl=en" target="_blank">Google Scholar</a> |
-      <a href="{{'files/Hoffman_Judy_CV.pdf' | relative_url}}" target="_blank">CV</a> |
-	  <a href="https://github.com/jhoffman/">Github</a> | 
-	  <a href="https://twitter.com/judyfhoffman">Twitter</a> |
-	  <a href="/bio/">Bio</a>
-    </p>
-    <p class="research-statement">
-      <strong>Research Statement:</strong> My research aims to enable learning based AI systems that can reliably benefit a diverse set of people and applications, even under resource constraints. I focus on algorithms for data efficient adaptation, reducing computation time, and building benchmarks and tools to better understand and mitigate model errors.
+      <a href="{{ 'files/Hoffman_Judy_CV.pdf' | relative_url }}" target="_blank">CV</a> |
+      <a href="https://github.com/jhoffman/">Github</a> |
+      <a href="https://twitter.com/judyfhoffman">Twitter</a> |
+      <a href="{{ '/bio/' | relative_url }}">Bio</a>
     </p>
   </div>
+</section>
+
+<section id="pi-background">
+  <p class="research-statement">
+    <strong>Research Statement:</strong> My research aims to enable learning based AI systems that can reliably benefit a diverse set of people and applications, even under resource constraints. I focus on algorithms for data efficient adaptation, reducing computation time, and building benchmarks and tools to better understand and mitigate model errors.
+  </p>
+
+  <p class="bio">
+    I am also an Adjunct Associate Professor at the <a href="https://ic.gatech.edu/">School of Interactive Computing</a> at <a href="https://www.gatech.edu/">Georgia Tech</a>.
+    Prior to joining UCI, Dr. Hoffman was an Associate Professor at Georgia Tech, a Visiting Research Scientist at
+    <a href="https://research.fb.com/category/facebook-ai-research/">Facebook AI Research</a>
+    and a postdoctoral scholar at <a href="https://cs.stanford.edu/">Stanford University</a> and UC Berkeley.
+    She received her PhD from <a href="https://bair.berkeley.edu/">UC Berkeley, EECS</a> in 2016 where she was a member of
+    <a href="https://bair.berkeley.edu/">BAIR</a> and <a href="https://deepdrive.berkeley.edu/">BDD</a> and advised by <a href="https://people.eecs.berkeley.edu/~trevor/">Trevor Darrell</a>.
+  </p>
 </section>
 
 <section id="news">
@@ -47,28 +57,27 @@ I am also an Adjunct Associate Professor at the <a href="https://ic.gatech.edu/"
     </li>
     {% endfor %}
   </ul>
-  <p><a href="/news/">More News</a></p>
-	
-	
-  <section id="contact">
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li>
-        <strong>Email:</strong>
-        <a href="mailto:judy.hoffman@uci.edu">judy.hoffman@uci.edu</a>
-      </li>
-      <li>
-        <strong>Office:</strong>
-        4226 Donald Bren Hall, Irvine, CA
-      </li>
-      <li>
-        <strong>Twitter:</strong>
-        <a href="https://twitter.com/judyfhoffman" target="_blank">@judyfhoffman</a>
-      </li>
-			<li>
-				<strong>LinkedIn:</strong>
-				<a href="https://www.linkedin.com/in/judy-hoffman-ai/">judy-hoffman-ai</a>
-			</li>
-    </ul>
-  </section>
+  <p><a href="{{ '/news/' | relative_url }}">More News</a></p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul class="contact-list">
+    <li>
+      <strong>Email:</strong>
+      <a href="mailto:judy.hoffman@uci.edu">judy.hoffman@uci.edu</a>
+    </li>
+    <li>
+      <strong>Office:</strong>
+      4226 Donald Bren Hall, Irvine, CA
+    </li>
+    <li>
+      <strong>Twitter:</strong>
+      <a href="https://twitter.com/judyfhoffman" target="_blank">@judyfhoffman</a>
+    </li>
+    <li>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/judy-hoffman-ai/">judy-hoffman-ai</a>
+    </li>
+  </ul>
 </section>
