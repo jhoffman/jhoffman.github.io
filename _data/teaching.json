@@ -70,9 +70,10 @@
     "level": "Undergraduate",
     "offerings": [
       {
-        "semester": "Spring 2026",
+        "semester": "Fall 2026",
         "university": "UC Irvine",
-        "url": ""
+        "url": "",
+        "upcoming": true
       }
     ]
   },
