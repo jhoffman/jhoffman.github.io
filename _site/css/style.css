@@ -300,6 +300,57 @@ a:hover {
   }
 }
 
+/* -------------------------------
+   Homepage introduction
+---------------------------------*/
+
+.pi-info {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: var(--spacing-lg);
+  align-items: center;
+}
+
+/* the container centres the photo when stacked; in the grid it should not
+   add its own trailing space */
+.pi-info .pi-photo-container {
+  margin-bottom: 0;
+}
+
+.pi-name {
+  font-size: 2rem;
+  margin: 0 0 var(--spacing-mini);
+}
+
+.pi-title {
+  margin: 0 0 var(--spacing-sm);
+}
+
+.pi-focus {
+  margin: 0 0 var(--spacing-md);
+  color: var(--color-muted-text);
+}
+
+.pi-details .links {
+  margin: 0;
+}
+
+/* Research statement: an accent rule reads lighter than a filled panel */
+.research-statement {
+  margin: 0 0 var(--spacing-md);
+  padding-left: var(--spacing-md);
+  border-left: 3px solid var(--color-accent);
+}
+
+/* Stack the photo above the text once the two columns get cramped */
+@media (max-width: 600px) {
+  .pi-info {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
 /* ===============================
    Alumni Section (collapsible)
    =============================== */
