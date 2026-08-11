@@ -328,7 +328,6 @@ a:hover {
 
 .pi-focus {
   margin: 0 0 var(--spacing-md);
-  color: var(--color-muted-text);
 }
 
 .pi-details .links {
