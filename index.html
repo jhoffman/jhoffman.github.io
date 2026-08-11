@@ -23,10 +23,17 @@ title: Home
     </p>
 
     <p class="links">
-      <a href="https://scholar.google.com/citations?user=mqpjAt4AAAAJ&hl=en" target="_blank">Google Scholar</a> |
-      <a href="{{ 'files/Hoffman_Judy_CV.pdf' | relative_url }}" target="_blank">CV</a> |
-      <a href="https://github.com/jhoffman/">Github</a> |
-      <a href="https://twitter.com/judyfhoffman">Twitter</a> |
+      {%- comment -%}
+        The icons carry no text, so each link needs its own accessible name.
+        title= gives sighted users the same label on hover.
+      {%- endcomment -%}
+      <a class="icon-link" href="https://scholar.google.com/citations?user=mqpjAt4AAAAJ&hl=en" target="_blank" aria-label="Google Scholar" title="Google Scholar">{% include icons/google-scholar.svg %}</a>
+      <a class="icon-link" href="https://github.com/jhoffman/" aria-label="GitHub" title="GitHub">{% include icons/github.svg %}</a>
+      <a class="icon-link" href="https://x.com/judyfhoffman" target="_blank" aria-label="X, @judyfhoffman" title="X, @judyfhoffman">{% include icons/x.svg %}</a>
+      <a class="icon-link" href="https://www.linkedin.com/in/judy-hoffman-ai/" target="_blank" aria-label="LinkedIn" title="LinkedIn">{% include icons/linkedin.svg %}</a>
+      <span class="links-divider" aria-hidden="true">|</span>
+      <a href="{{ 'files/Hoffman_Judy_CV.pdf' | relative_url }}" target="_blank">CV</a>
+      <span class="links-divider" aria-hidden="true">|</span>
       <a href="{{ '/bio/' | relative_url }}">Bio</a>
     </p>
   </div>
@@ -72,8 +79,8 @@ title: Home
       4226 Donald Bren Hall, Irvine, CA
     </li>
     <li>
-      <strong>Twitter:</strong>
-      <a href="https://twitter.com/judyfhoffman" target="_blank">@judyfhoffman</a>
+      <strong>X:</strong>
+      <a href="https://x.com/judyfhoffman" target="_blank">@judyfhoffman</a>
     </li>
     <li>
       <strong>LinkedIn:</strong>
