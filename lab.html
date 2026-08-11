@@ -19,7 +19,7 @@ permalink: /lab/
       <h3><a href="{{ member.URL }}">{{ member.name }}</a></h3>
       <p>{{ member.role }}</p>
 			{% if member.co_advisor %}
-				<p><em>Co-advised by: {{member.co_advisor}}</em>
+				<p><em>Co-advised by: {{member.co_advisor}}</em></p>
 			{% endif %}
       <p>({{ member.year_started }} - )</p>
     </li>
@@ -28,37 +28,30 @@ permalink: /lab/
   </ul>
   
   
-  <br>
-  
   <h2>Prospective Members</h2>
-  <p> Thanks for your interest in our lab! </p>
+  <p>Thanks for your interest in our lab!</p>
+
+  <h3>UCI Students</h3>
   <ul>
-	  <li>
-		  <h3>UCI Students</h3>
-			  <ul>
-				  <li><strong>Current PhD Students:</strong> Please email Judy directly. Include your CV, relevant experience, semester interested in getting started, and funding requirements. 
-				  </li>
-				  <li>
-					  <strong>Current MS and BS Students:</strong> 
-						<!--We do not currently have any open positions for Fall 2025. When positions are available we will include an application link here. -->
-						We have openings for strong MS or BS students. <a href="https://forms.gle/f7CtWNsbCSPwKj35A">Please apply here.</a>
-						Note, while prior research experience is not a requirement to join the lab, successful members will have prior experience through courses or projects in Computer Vision, Deep Learning, and Machine Learning. 
-				  </li>
-			  </ul>
-	  </li>
-	  <li>		  
-		  <h3>Students Outside of UCI</h3>
-		  <ul>
-			  <li> 
-					Please apply directly to <a href="https://ics.uci.edu/admissions-information-and-computer-science/graduate-admissions/">ICS Computer Science at UCI</a>.
-					Due to the volume of email I receive, I cannot reply to individual requests.  
-			  <li>My group is not accepting visitors from outside UCI at this time.</li>
-		  </ul>
-	  </li>
+    <li>
+      <strong>Current PhD Students:</strong> Please email Judy directly. Include your CV, relevant experience, semester interested in getting started, and funding requirements.
+    </li>
+    <li>
+      <strong>Current MS and BS Students:</strong>
+      <!--We do not currently have any open positions for Fall 2025. When positions are available we will include an application link here. -->
+      We have openings for strong MS or BS students. <a href="https://forms.gle/f7CtWNsbCSPwKj35A">Please apply here.</a>
+      Note, while prior research experience is not a requirement to join the lab, successful members will have prior experience through courses or projects in Computer Vision, Deep Learning, and Machine Learning.
+    </li>
   </ul>
-  
-  
-  <br>
+
+  <h3>Students Outside of UCI</h3>
+  <ul>
+    <li>
+      Please apply directly to <a href="https://ics.uci.edu/admissions-information-and-computer-science/graduate-admissions/">ICS Computer Science at UCI</a>.
+      Due to the volume of email I receive, I cannot reply to individual requests.
+    </li>
+    <li>My group is not accepting visitors from outside UCI at this time.</li>
+  </ul>
   
   {%- comment -%}
     First, pull in only those with a nonblank `next` field
@@ -87,9 +80,14 @@ permalink: /lab/
               <img src="{{ member.image | relative_url }}" alt="{{ member.name }}">
               <h4><a href="{{ member.URL }}">{{ member.name }}</a></h4>
               <p>{{ member.role }}</p>
-    <p>({{ member.year_started }}
-		{% if member.year_ended != "" %} - {{ member.year_ended }}{% endif %})
-	</p>
+              {%- comment -%}
+                Show a single value for a stay of one year or one term, i.e. when
+                year_ended is blank or matches year_started ("2024", "Spring 2021").
+                Otherwise show the full range.
+              {%- endcomment -%}
+              {%- assign started = member.year_started | strip -%}
+              {%- assign ended = member.year_ended | strip -%}
+              <p>({{ started }}{% unless ended == "" or ended == started %} - {{ ended }}{% endunless %})</p>
 	{% if member.next != 'x' %}
 		<p><em> {{ member.next }} </em></p>
 	{% endif %}
@@ -101,19 +99,17 @@ permalink: /lab/
     {%- endfor -%}
 
 
-	<h1>Funding</h1>
-		Our research lab is made possible by the generous support of the following organizations.
+	<h2>Funding</h2>
+	<p>Our research lab is made possible by the generous support of the following organizations.</p>
 
-		<table>
-			<tr>
-		<td><img height=70 src="{{'images/nsf.jpeg' | relative_url}}"></td>
-		<td><img height=50 src="{{'images/darpa.jpeg' | relative_url}}"></td>
-		<td><img height=50 src="{{'images/nasa.png' | relative_url}}"></td>
-		<td><img height=50 src="{{'images/arl.jpeg' | relative_url}}"></td>
-		<td><img height=50 src="{{'images/cisco.png' | relative_url}}"></td>
-		<td><img height=50 src="{{'images/google.png' | relative_url}}"></td>
-		<td><img height=50 src="{{'images/nvidia.png' | relative_url}}"></td>
-		</tr>
-		</table>
+	<ul class="funding-logos">
+		<li><img src="{{ 'images/nsf.jpeg' | relative_url }}" alt="National Science Foundation"></li>
+		<li><img src="{{ 'images/darpa.jpeg' | relative_url }}" alt="DARPA"></li>
+		<li><img src="{{ 'images/nasa.png' | relative_url }}" alt="NASA"></li>
+		<li><img src="{{ 'images/arl.jpeg' | relative_url }}" alt="U.S. Army Research Laboratory"></li>
+		<li><img src="{{ 'images/cisco.png' | relative_url }}" alt="Cisco"></li>
+		<li><img src="{{ 'images/google.png' | relative_url }}" alt="Google"></li>
+		<li><img src="{{ 'images/nvidia.png' | relative_url }}" alt="NVIDIA"></li>
+	</ul>
   
 </section>
