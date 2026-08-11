@@ -6,20 +6,44 @@ permalink: /teaching/
 
 <section id="teaching">
   <h2>Teaching</h2>
-  {% for item in site.data.teaching %}
-  	{% assign course = item[1] %}
-  	<article class="course">
-	    <a href="{{ course.url | relative_url }}">
-	           <img src="{{ course.image | relative_url }}" alt="{{ course.name }}" class="course-thumb">
-	         </a>
-	         <div class="course-info">
-	           <h3 class="course-name">
-	             <a href="{{ course.url | relative_url }}">{{ course.name }}</a>
-	           </h3>
-	           <p class="course-role">{{ course.role }}</p>
-	           <p class="course-meta">{{ course.semester }} &mdash; {{ course.university }}</p>
-		   </div>
-	</article>
+
+  {%- comment -%}
+    Each series in _data/teaching.json has a "level" (Graduate or Undergraduate)
+    and nested "offerings". Card order within a level follows key order in that file.
+  {%- endcomment -%}
+
+  {% assign levels = "Graduate,Undergraduate" | split: "," %}
+  {% for level in levels %}
+    <h3>{{ level }} Courses</h3>
+    {% for item in site.data.teaching %}
+      {% assign course = item[1] %}
+      {% if course.level == level %}
+        <article class="course">
+          <img src="{{ course.image | relative_url }}" alt="{{ course.name }}" class="course-thumb">
+          <div class="course-info">
+            <h4 class="course-name">{{ course.name }}</h4>
+            <p class="course-role">{{ course.role }}</p>
+            <ul class="course-offerings">
+              {% for offering in course.offerings %}
+                <li>
+                  {% capture offering_text %}
+                    {%- if offering.label -%}{{ offering.label }} &middot; {% endif -%}
+                    {{ offering.semester }} &mdash; {{ offering.university }}
+                  {% endcapture %}
+                  {% assign offering_text = offering_text | strip %}
+                  {% if offering.url != "" %}
+                    <a href="{{ offering.url | relative_url }}">{{ offering_text }}</a>
+                  {% else %}
+                    <span>{{ offering_text }}</span>
+                  {% endif %}
+                  {% if offering.upcoming %}<span class="tag-upcoming">Upcoming</span>{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </article>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 
 </section>

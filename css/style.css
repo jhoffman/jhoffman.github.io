@@ -157,6 +157,45 @@ li .highlight {
   flex: 1;
 }
 
+/* Card title under the Graduate / Undergraduate h3 */
+.course-name {
+  font-size: 1.05rem;
+  margin: 0 0 var(--spacing-mini);
+}
+
+/* Term offerings inside a course series card */
+.course-offerings {
+  list-style: none;
+  margin: var(--spacing-sm) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.course-offerings li {
+  font-size: 0.9rem;
+  color: var(--color-muted-text);
+}
+
+.course-offerings a {
+  font-weight: 500;
+}
+
+/* Quiet tag for a term that has not been taught yet */
+.tag-upcoming {
+  display: inline-block;
+  margin-left: var(--spacing-sm);
+  padding: 0.1em 0.5em;
+  border-radius: var(--radius);
+  background-color: var(--color-accent-light);
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+}
+
 /* Mobile: stack again on narrow screens */
 @media (max-width: 600px) {
   .course {
