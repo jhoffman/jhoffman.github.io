@@ -30,9 +30,10 @@
   /* Muted */
   --color-muted-text: #6c757d;  /* medium gray – for dates/metadata */
 
-  /* Typography */
+  /* Typography. Headings share the body face and are distinguished by weight
+     and size instead; keep the variable so they can be switched in one place. */
   --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-heading: var(--font-sans);
   
   /* Spacing */
 	--spacing-mini: 0.25rem;
@@ -83,6 +84,27 @@ h1, h2, h3, h4 {
   color: var(--color-primary);
   margin-top: 0;
   line-height: 1.25;
+  font-weight: 600;
+}
+
+/* Fluid type scale. The first value is the size on a narrow phone, the last is
+   the size from ~960px up, and the middle term interpolates between the two, so
+   headings no longer arrive at desktop size on a 375px screen. */
+h1 {
+  font-size: clamp(1.5rem, 1.24rem + 1.16vw, 1.9rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 1.03rem + 1.02vw, 1.6rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 1.04rem + 0.29vw, 1.2rem);
+}
+
+/* Card and publication titles: set apart by weight rather than size */
+h4 {
+  font-size: 1rem;
 }
 
 /* A heading that follows other content needs room above it. Keying off the
@@ -255,10 +277,6 @@ a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
   nav ul li {
     margin: var(--spacing-sm);
   }
@@ -338,7 +356,7 @@ a:hover {
 }
 
 .pi-name {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 1.34rem + 1.16vw, 2rem);
   margin: 0 0 var(--spacing-mini);
 }
 
@@ -383,12 +401,14 @@ a:hover {
   overflow: hidden;
 }
 
-/* Style the summary header */
+/* Style the summary header. These are group labels on a control, not section
+   headings, so they stay near body size instead of competing with the h2 above
+   them or with the site title in the header. */
 .alumni-section summary {
   cursor: pointer;
   padding: var(--spacing-md) var(--spacing-lg);
   font-family: var(--font-heading);
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--color-primary);
   list-style: none;               /* remove default marker */
@@ -563,11 +583,6 @@ a:hover {
 .table-container {
   overflow-x: auto; /* allows horizontal scroll on small screens */
   /*margin: var(--spacing-lg) 0;*/
-}
-
-.experience-section {
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 

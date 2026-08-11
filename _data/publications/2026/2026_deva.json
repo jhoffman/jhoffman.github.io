@@ -1,0 +1,19 @@
+{
+    "id": "2026Deva",
+    "authors": "Mengqi Zhang, Sahil Khose, Simar Kareer, Yuchen Song, Unnat Jain, Judy Hoffman",
+    "title": "DeVA: Decoupled Video-Action Model with physical guidance for robot policy learning",
+    "venue": "arxiv",
+    "year": "2026",
+    "month": 8,
+    "pdf": "https://arxiv.org/abs/2607.24159",
+    "slides": "",
+    "code": "https://github.com/Mq-Zhang1/deva",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2026_deva.gif",
+    "project": "https://deva-model.github.io/",
+    "video": "",
+    "is_new": false,
+    "press": "",
+    "special": "",
+    "abstract": ""
+  }
