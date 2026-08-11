@@ -1,0 +1,19 @@
+{
+    "id": "2026Spot",
+    "authors": "Mengqi Zhang, Sahil Khose, Fiona Ryan, Judy Hoffman",
+    "title": "SPOT: Structured Prompting with Object-Centric Tokens for Open-World Scene Graphs",
+    "venue": "MUSI and Visual Concepts Workshops at CVPR",
+    "year": "2026",
+    "month": 6,
+    "pdf": "https://openreview.net/pdf?id=hyB6UchStf",
+    "slides": "",
+    "code": "",
+    "bibtex_type": "inproceedings",
+    "fig": "figs/2026_spot.png",
+    "project": "",
+    "video": "",
+    "is_new": false,
+    "press": "",
+    "special": "",
+    "abstract": ""
+  }

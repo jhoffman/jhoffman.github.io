@@ -85,31 +85,31 @@ h1, h2, h3, h4 {
   line-height: 1.25;
 }
 
+/* A heading that follows other content needs room above it. Keying off the
+   sibling combinator means a heading that opens a section or card is still
+   flush with the container's top padding, and the card rules further down
+   (.lab-members li h3, .publication-summary h4) keep their tighter spacing. */
+* + h2,
+* + h3,
+* + h4 {
+  margin-top: var(--spacing-lg);
+}
+
 li .highlight {
 	color: var(--color-accent);
 }
 
-/* Cards for news, publications, courses */
-.article-card,
+/* Cards for news, publications and courses. No hover transform: none of these
+   are clickable as a whole. */
 .news-item,
 .course,
-.publication-summary,
-.publication-item {
+.publication-summary {
   background-color: var(--color-surface);
   border-radius: var(--radius);
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
   overflow: hidden;
-  transition: transform 0.2s;
-}
-
-.article-card:hover,
-.news-item:hover,
-.course:hover,
-.publication-summary:hover,
-.publication-item:hover {
-  transform: translateY(-2px);
 }
 
 /* Course cards: image left, content right */
@@ -151,14 +151,6 @@ li .highlight {
 }
 
 
-.news-item .date,
-.publication-summary .date,
-.publication-item .date {
-  font-size: 0.875rem;
-  color: #7f8c8d;
-  margin-bottom: var(--spacing-sm);
-}
-
 .news-item--highlight {
   background-color: #fff9c4;      /* pale yellow */
   /* Inset stripe rather than border-left: a real border shifts the item's
@@ -193,11 +185,6 @@ img {
   padding: var(--spacing-md);
   text-align: center;
   width: 200px;
-  transition: transform 0.2s;
-}
-
-.lab-members li:hover {
-  transform: translateY(-2px);
 }
 
 .lab-members li img {
@@ -205,9 +192,42 @@ img {
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: var(--spacing-sm);
   display: block;
-  margin: 0 auto;
+  /* one shorthand: a separate margin-bottom above was being reset by this */
+  margin: 0 auto var(--spacing-sm);
+}
+
+/* Short labels, so the default 1em paragraph margins are far too loose */
+.lab-members li h3,
+.lab-members li h4 {
+  margin: 0 0 var(--spacing-mini);
+}
+
+.lab-members li p {
+  margin: 0 0 var(--spacing-mini);
+}
+
+.lab-members li p:last-child {
+  margin-bottom: 0;
+}
+
+/* Funding logos: wrapping row, sized by CSS so the logos match optically.
+   max-width as well as max-height stops wide logos dwarfing square ones. */
+.funding-logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-lg);
+  list-style: none;
+  margin: var(--spacing-md) 0 0;
+  padding: 0;
+}
+
+.funding-logos img {
+  max-height: 3rem;
+  max-width: 8rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .date-updated {
@@ -420,11 +440,6 @@ a:hover {
   text-align: center;
   flex: 1 1 calc(33% - var(--spacing-lg)); /* three across */
   max-width: calc(33% - var(--spacing-lg));
-  transition: transform 0.2s;
-}
-
-.alumni-section .lab-members li:hover {
-  transform: translateY(-2px);
 }
 
 .alumni-section h3 {
