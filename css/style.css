@@ -31,8 +31,8 @@
   --color-muted-text: #6c757d;  /* medium gray – for dates/metadata */
 
   /* Typography */
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-heading: var(--font-sans);
+  --font-sans: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Source Serif 4", Georgia, "Times New Roman", serif;
   
   /* Spacing */
 	--spacing-mini: 0.25rem;
@@ -48,6 +48,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* 106.25% ~= 17px root: Source Sans 3 has a smaller x-height than the
+   system font it replaced, so this restores the previous reading size.
+   A percentage (not px) keeps the browser's own font-size setting honoured. */
+html {
+  font-size: 106.25%;
 }
 
 body {
@@ -71,10 +78,11 @@ section {
   margin-bottom: var(--spacing-lg);
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
   font-family: var(--font-heading);
   color: var(--color-primary);
   margin-top: 0;
+  line-height: 1.25;
 }
 
 li .highlight {
@@ -153,7 +161,9 @@ li .highlight {
 
 .news-item--highlight {
   background-color: #fff9c4;      /* pale yellow */
-  border-left: 4px solid #ffeb3b; /* optional accent stripe */
+  /* Inset stripe rather than border-left: a real border shifts the item's
+     padding box, which pushed the timeline dot 4px out of line with the rest. */
+  box-shadow: inset 4px 0 0 #ffeb3b, 0 1px 3px rgba(0,0,0,0.1);
   border-radius: 4px;             /* soften the corners */
 }
 
@@ -405,49 +415,54 @@ a:hover {
   list-style: none;
   margin: var(--spacing-lg) 0;
   padding: 0;
+
+  /* Timeline geometry. The date column is 4.5rem and the text starts at 6rem,
+     so 5.25rem is the centre of the gutter between them. */
+  --timeline-x: 5.25rem;
+  --timeline-dot: 0.5rem;
 }
 
-/* Vertical line */
+/* Vertical line. It sits behind the item backgrounds, so it shows only in the
+   gaps between items and connects them without crossing over them. */
 .news-list::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 2.5rem;
+  left: var(--timeline-x);
+  margin-left: -1px;              /* centre the 2px line on --timeline-x */
   width: 2px;
   background: var(--color-muted-text);
 }
 
-/* Each item */
+/* Each item: baseline keeps the date and text aligned despite different sizes */
 .news-item {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   padding: var(--spacing-sm) 0;
 }
 
-/* Dot marker */
+/* Dot marker: centred on the timeline and on the first line of text */
 .news-item::before {
   content: "";
   position: absolute;
-  left: 2.3rem;
-  top: 0.5rem;
-  width: 0.5rem;
-  height: 0.5rem;
+  left: calc(var(--timeline-x) - var(--timeline-dot) / 2);
+  top: 0.9rem;
+  width: var(--timeline-dot);
+  height: var(--timeline-dot);
   background: var(--color-accent);
   border-radius: 50%;
 }
 
-/* Date column */
+/* Date column: ends well clear of the timeline gutter */
 .news-item time {
-  flex: 0 0 5rem;
+  flex: 0 0 4.5rem;
   font-size: 0.875rem;
   color: var(--color-muted-text);
   text-align: right;
-  margin-right: var(--spacing-md);
-  margin-top: 0.75rem;
-  display: block;                /* ensure margin applies */
-  margin-bottom: var(--spacing-sm); /* adjust up for more space */
+  margin-right: 1.5rem;
+  display: block;
 }
 
 /* Text column */
@@ -456,7 +471,6 @@ a:hover {
   margin: 0;
   font-size: 0.95rem;
   line-height: 1.4;
-  margin-top: var(--spacing-sm);
 }
 
 /* Tighten up the last item */
